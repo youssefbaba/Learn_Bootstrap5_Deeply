@@ -1,0 +1,83 @@
+.position {
+    color: red;
+}
+
+%general-style-parent {
+    border: 1px solid green;
+    padding: 0.5rem;
+}
+
+%general-style-child {
+    width: 400px;
+    border: 1px solid red;
+}
+
+.position-static,
+.position-relative,
+.position-fixed {
+    @extend %general-style-parent;
+}
+
+.position-static {
+    &-#{child} {
+        @extend %general-style-child;
+        margin: auto;
+        position: static;
+    }
+}
+
+.position-relative {
+    position: relative;
+    top: 2rem;
+    // right: 3rem;
+    // bottom: 3rem;
+    left: 3rem;
+
+    +* {
+        margin-top: 1rem;
+        border: 1px solid blue;
+    }
+}
+
+.position-fixed-test {
+    @extend %general-style-child;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    // top: 0;
+    // right: 0;
+}
+
+.position-fixed {
+    height: 400px;
+
+    &-#{child} {
+        @extend %general-style-child;
+        border: 1px solid #3f51b5;
+        margin: 0;
+        position: fixed;
+        top: 1rem;
+        left: 4rem;
+    }
+}
+
+.transform-property {
+    transform: translateX(1rem);
+}
+
+.position-sticky {
+    @extend %general-style-child;
+    background-color: green;
+    color: white;
+    position: sticky;
+    top: 3rem;
+    left: 10rem;
+    // bottom: 3rem;
+    // left: 6rem;
+}
+
+.position-sticky-parent {
+    height: 600px;
+    border: 1px solid red;
+    overflow: auto;
+}

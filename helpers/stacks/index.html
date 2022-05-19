@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpers: Stacks</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h2 class="component display-4 text-primary">Stacks</h2>
+                    <hr>
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-danger mb-3">Vertical</h3>
+                        <div class="code-live">
+                            <div class="vstack gap-3 border border-1 border-danger" style="height:400px;">
+                                <span class="bg-light p-2 border">First Item</span>
+                                <span class="bg-light p-2 border">Second Item</span>
+                                <span class="bg-light p-2 border">Third Item</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-danger">Horizontal</h3>
+                        <div class="code-live">
+                            <div class="hstack gap-3 border border-1 border-danger" style="height:100px;">
+                                <div class="bg-light p-2 border">First Item</div>
+                                <div class="bg-light p-2 border">Second Item</div>
+                                <div class="bg-light p-2 border">Third Item</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="component-variation text-danger">Create Equal gap by using margin utilities</h3>
+                        <div class="code-live">
+                            <div class="hstack gap-3 border border-1 border-danger" style="height:100px;">
+                                <div class="bg-light p-2 border mx-auto">First Item</div>
+                                <div class="bg-light p-2 border mx-auto">Second Item</div>
+                                <div class="bg-light p-2 border mx-auto">Third Item</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="component-variation text-danger">Horizontal Stack with Vertical Rule</h3>
+                        <div class="code-live">
+                            <div class="hstack gap-3">
+                                <div class="bg-light p-2 border">First Item</div>
+                                <div class="bg-light p-2 border ms-auto">Second Item</div>
+                                <div class="vr"></div>
+                                <div class="bg-light p-2 border">Third Item</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="component-variation text-danger">Example Of Vertical Stack</h3>
+                        <div class="code-live">
+                            <div class="vstack gap-3 col-6 mx-auto">
+                                <button type="button" class="btn btn-primary">Save Change</button>
+                                <button type="button" class="btn btn-outline-danger">Cancel</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="component-variation text-danger">Example Of Horizontal Stack</h3>
+                        <div class="code-live">
+                            <div class="hstack gap-3">
+                                <input type="text" class="form-control me-auto" placeholder="bla bla bla">
+                                <button type="button" class="btn btn-primary">Submit</button>
+                                <div class="vr"></div>
+                                <button type="button" class="btn btn-outline-danger">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-primary">Spacers</h3>
+                        <div class="code-live">
+                            <h4 class="h5 text-danger mt-3">Gap</h4>
+                            <div class="vstack gap-4">
+                                <div class="bg-light border p-2">Item in stack</div>
+                                <div class="bg-light border p-2">Item in stack</div>
+                                <div class="bg-light border p-2">Item in stack</div>
+                            </div>
+                            <h4 class="h5 text-danger mt-3">Margin</h4>
+                            <div class="hstack gap-4">
+                                <div class="bg-light border p-2">Item in stack</div>
+                                <div class="bg-light border p-2">Item in stack</div>
+                                <div class="bg-light border p-2 ms-auto">Item in stack</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Boostrap Js -->
+</body>
+
+</html>

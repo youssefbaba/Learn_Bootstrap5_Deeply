@@ -1,0 +1,10 @@
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Remove From map
+$theme-colors:map-remove($theme-colors, "info", "light");
+
+// Import Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

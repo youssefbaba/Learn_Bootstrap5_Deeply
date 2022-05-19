@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 – Layout: Columns</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style type="text/css">
+        .row {
+            background-color: #f8f9fa;
+            outline: 1px solid red;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        [class^=col] {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+        }
+
+        [data-example="row-height"] .row {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="mt-3">
+            <div class="">
+                <h2 class="component display-4">Columns</h2>
+                <hr>
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Vertical alignment</h3>
+                    <div class="code-live">
+                        <div class="container">
+                            <h4 class="h5 text-muted mt-3">Row</h4>
+                            <p>Grid with vertical alignment on .row using flex utilities</p>
+                        </div>
+                        <h4>align-items-stretch</h4>
+                        <div class="container" data-example="row-height">
+                            <div class="row align-items-stretch">
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                            </div>
+                        </div>
+                        <h4>align-items-start</h4>
+                        <div class="container" data-example="row-height">
+                            <div class="row align-items-start">
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                            </div>
+                        </div>
+                        <h4>align-items-center</h4>
+                        <div class="container" data-example="row-height">
+                            <div class="row align-items-center">
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                            </div>
+                        </div>
+                        <h4>align-items-end</h4>
+                        <div class="container" data-example="row-height">
+                            <div class="row align-items-end">
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                                <div class="col">One Of Three Column</div>
+                            </div>
+                        </div>
+                        <h4>align-items-baseline</h4>
+                        <div class="container" data-example="row-height">
+                            <div class="row align-items-baseline">
+                                <div class="col" style="font-size:1rem;">One Of Four Column</div>
+                                <div class="col" style="font-size:1.5rem;">One Of Four Column</div>
+                                <div class="col" style="font-size:2rem;">One Of Four Column</div>
+                                <div class="col" style="font-size:0.5rem;">One Of Four Column</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h4 class="h5 text-muted mt-3">Column</h4>
+                            <p>Grid with vertical alignment on .col using flex utilities</p>
+                        </div>
+                        <div class="container" data-example="row-height">
+                            <div class="row">
+                                <div class="col align-self-start">One Of Three Column</div>
+                                <div class="col align-self-center">One Of Three Column</div>
+                                <div class="col align-self-end">One Of Three Column</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="code-example mb-5">
+                    <div class="container">
+                        <h3 class="component-variation text-muted">Horizontal alignment</h3>
+                        <p>Grid with horizontal alignment on .row using flex utilities</p>
+                    </div>
+                    <div class="code-live">
+                        <h4>justify-content-start</h4>
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-4">One Of Two Column</div>
+                                <div class="col-4">One Of Two Column</div>
+                            </div>
+                        </div>
+                        <h4>justify-content-center</h4>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-4">One Of Two Column</div>
+                                <div class="col-4">One Of Two Column</div>
+                            </div>
+                        </div>
+                        <h4>justify-content-end</h4>
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-4">One Of Two Column</div>
+                                <div class="col-4">One Of Two Column</div>
+                            </div>
+                        </div>
+                        <h4>justify-content-between</h4>
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-4">One Of Two Column</div>
+                                <div class="col-4">One Of Two Column</div>
+                            </div>
+                        </div>
+                        <h4>justify-content-around</h4>
+                        <div class="container">
+                            <div class="row justify-content-around">
+                                <div class="col-4">One Of Two Column </div>
+                                <div class="col-4">One Of Two Column </div>
+                            </div>
+                        </div>
+                        <h4>justify-content-evenly</h4>
+                        <div class="container">
+                            <div class="row justify-content-evenly">
+                                <div class="col-4">One Of Two Column</div>
+                                <div class="col-4">One Of Two Column</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Column wrapping</h3>
+                    <div class="code-live">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">.col-9</div>
+                                <div class="col-4">.col-4</div>
+                                <div class="col-6">.col-6</div>
+                                <div class="col-7">.col-7</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">.col-8</div>
+                                <div class="col-5">.col-5</div>
+                                <div class="col-4">.col-4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Column breaks</h3>
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">All breakpoints</h4>
+                        <p>Grid with column break using sizing utility class</p>
+                        <h4>First Method</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                            </div>
+                        </div>
+                        <h4>Second Method And The Best</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="w-100"></div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                            </div>
+                        </div>
+
+                        <h4 class="h5 text-muted mt-3 container">Responsive</h4>
+                        <p>Grid with responsive column break using sizing and display utility classes</p>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="w-100 d-none d-md-block"></div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example mb-5">
+                    <div class="container">
+                        <h3 class="component-variation text-muted">Reordering</h3>
+                        <p>Grid reordering with flex utilities: order-first (-1), order-0 to order-5 and order-last (6)
+                        </p>
+                    </div>
+                    <div class="code-live">
+                        <!-- 
+                            - default value of order for htlm element is 0
+                            - .order-{number[-1,0,1,2,3,4,5,6]}
+                            - .order-{breakpoint}-{number[-1,0,1,2,3,4,5,6]}
+                            - .order-first =  -1 
+                            - .order-last =  6 
+                        -->
+
+                        <div class="container">
+                            <div class="row">
+                                <!-- order-3 -->
+                                <div class="col order-3">First in DOM => 6</div>
+                                <div class="col">Second in DOM => 1</div>
+                                <!-- order-2 -->
+                                <div class="col order-2">Third in DOM => 5</div>
+                                <!--  order-5 -->
+                                <div class="col order-5">Fourth in DOM => 7</div>
+                                <div class="col">Fifth in DOM => 2</div>
+                                <!--  order-1 -->
+                                <div class="col order-1">Sixth in DOM => 4</div>
+                                <div class="col">Seventh in DOM => 3</div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">=> 2</div>
+                                <div class="col order-2">=> 6</div>
+                                <div class="col order-first">=> 1</div>
+                                <div class="col">=> 3</div>
+                                <div class="col order-4">=> 7</div>
+                                <div class="col">=> 4</div>
+                                <div class="col order-last">=> 8</div>
+                                <div class="col  order-1">=> 5</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col order-last">First, but last</div>
+                                <div class="col order-5">Second, but number 5</div>
+                                <div class="col order-4">Third, but number 4</div>
+                                <div class="col order-3">Fourth, but number 3</div>
+                                <div class="col order-first">Fifth, but first</div>
+                                <div class="col order-2">Last, but unordered, so number 2</div>
+                                <div class="col">Lorem, ipsum</div>
+                            </div>
+                        </div>
+                        <h4>Responsive Ordering</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3 order-md-1 order-lg-last">Image 1</div>
+                                <div class="col-md-6 col-lg-3  order-md-first order-lg-2">Image 2</div>
+                                <div class="col-md-6 col-lg-3 order-md-last order-lg-4">Image 3</div>
+                                <div class="col-md-6 col-lg-3 order-md-2 order-lg-first">Image 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Offsetting</h3>
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">Offset classes</h4>
+                        <!-- 
+                            - .offset-{number[1 , .... , 11]}
+                            - .offset-{breakpoint}-{number[1 , .... , 11]}
+                        -->
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">.col-md-4</div>
+                                <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 offset-md-3">.col-md-3</div>
+                                <div class="col-md-3 offset-md-3">.col-md-3</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">.col-md-6</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">.col-md-5</div>
+                                <div class="col-md-5 offset-md-2">.col-md-5 .offset-md-2</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-3">.col-lg-4 .offset-lg-3</div>
+                                <div class="col-lg-2 offset-lg-3">.col-lg-2 .offset-lg-3</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 offset-md-3 col-lg-6">.col-md-4 .offset-md-3</div>
+                                <div class="col-md-2 offset-md-2  col-lg-3 offset-lg-0">.col-md-2 .offset-md-3</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-5 col-md-6">
+                                    .col-sm-5 .col-md-6
+                                </div>
+                                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                                    .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5 col-lg-6">
+                                    col-sm-6 .col-md-5 .col-lg-6
+                                </div>
+                                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                                    .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">Spacing utilities</h4>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">.col-md-4</div>
+                                <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 ms-md-auto">col-md-3 .ms-md-auto</div>
+                                <div class="col-md-3 ms-md-auto">col-md-3 .ms-md-auto</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-auto me-auto">.col-auto .me-auto</div>
+                                <div class="col-auto">.col-auto</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">.col-md-5</div>
+                                <div class="col-md-5 ms-auto">.col-md-5 .ms-auto</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 ms-lg-auto">.col-lg-4 .ms-lg-auto</div>
+                                <div class="col-lg-2 ms-lg-auto">.col-lg-2 .ms-lg-auto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Standalone column classes</h3>
+                    <div class="code-live">
+                        <div class="container" style="border: 1px solid blue;">
+                            <div class="row">
+                                <div class="col-6">Lorem, ipsum</div>
+                                <div class="col-6">Lorem, ipsum</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-live mt-3">
+                        <div class="container">
+                            <div class="col-3 px-2">.col-3</div>
+                            <div class="col-sm-9 px-2">.col-sm-9</div>
+                        </div>
+
+                    </div>
+                    <div class="code-live mt-3">
+                        <div class="container">
+                            <div class="col-1 px-2">8.333333%</div>
+                            <div class="col-2 px-2">16.666667%</div>
+                            <div class="col-3 px-2">25%</div>
+                            <div class="col-4 px-2">33.333333%</div>
+                            <div class="col-5 px-2">41.666667%</div>
+                            <div class="col-6 px-2">50%</div>
+                            <div class="col-7 px-2">58.333333%</div>
+                            <div class="col-8 px-2">66.666667%</div>
+                            <div class="col-9 px-2">75%</div>
+                            <div class="col-10 px-2">83.333333%</div>
+                            <div class="col-11 px-2">91.666667%</div>
+                            <div class="col-12 px-2">100%</div>
+                        </div>
+                    </div>
+
+                    <div class="code-live">
+                        <h4>Test</h4>
+                        <div>
+                            <img src="https://via.placeholder.com/600x250/F00/FFF?text=Youssef+Baba "
+                                class="col-md-6 float-md-end mb-3 ms-md-3" alt="Image" style="padding:0;">
+                            <p class="clearfix"></p>
+                            <p>
+                                A paragraph of placeholder text. We're using it here to show the use of the clearfix
+                                class. We're adding quite a few meaningless phrases here to demonstrate how the columns
+                                interact here with the floated image.
+                            </p>
+                            <p>
+                                As you can see the paragraphs gracefully wrap around the floated image. Now imagine how
+                                this would look with some actual content in here, rather than just this boring
+                                placeholder text that goes on and on, but actually conveys no tangible information at.
+                                It simply takes up space and should not really be read.
+                            </p>
+                            <p>
+                                And yet, here you are, still persevering in reading this placeholder text, hoping for
+                                some more insights, or some hidden easter egg of content. A joke, perhaps.
+                                Unfortunately, there's none of that here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

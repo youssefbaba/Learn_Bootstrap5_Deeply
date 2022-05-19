@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpers: Text truncation</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h2 class="component display-4 text-primary">Text truncation</h2>
+                    <hr>
+                    <div class="code-example mb-5">
+                        <div class="code-live">
+                            <h4 class="h5 text-danger mt-3">Block Test 1</h4>
+                            <p class="bg-light p-2 border border-2 border-dark  text-truncate">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eligendi aut vel facilis
+                                aspernatur fugiat cum, explicabo fuga iure ipsa distinctio. Cum libero quas odio,
+                                quibusdam laboriosam minima perferendis cupiditate provident delectus distinctio
+                                incidunt error, maiores quidem itaque illo. Et, autem. Molestias placeat possimus
+                                aperiam cupiditate temporibus quasi quod architecto!
+                            </p>
+                            <h4 class=" h5 text-danger mt-3">Inline-block Test 1</h4>
+                            <span class="bg-light p-2 border border-2 border-dark d-inline-block w-100 text-truncate">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minus rem hic dolorem
+                                reiciendis! Facilis officiis odit ipsum? Quae eum, odit excepturi officia ea explicabo
+                                id voluptas deleniti maiores, non alias quisquam aspernatur harum odio doloremque itaque
+                                culpa optio labore ipsum nemo nostrum. Fugiat rerum laudantium, dicta atque sed sint!
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="code-live">
+                            <h4 class="h5 text-danger mt-3">Block Test 2</h4>
+                            <p class="bg-light p-2 border border-2 border-dark w-25 text-truncate"
+                                title="This text is quite long, and will be truncated once displayed.">
+                                This text is quite long, and will be truncated once displayed.
+                            </p>
+                            <h4 class="h5 text-danger mt-3">Inline-block Test 2</h4>
+                            <span class="bg-light p-2 border border-2 border-dark d-inline-block text-truncate"
+                                style="max-width:200px;"
+                                title="This text is quite long, and will be truncated once displayed.">
+                                This text is quite long, and will be truncated once displayed.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// Create your own map
+$cutomm-colors:("purple":#6f42c1,
+    "orange":#fd7e14);
+
+// Merge the maps
+$theme-colors : map-merge($theme-colors, $cutomm-colors);
+
+// Import Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

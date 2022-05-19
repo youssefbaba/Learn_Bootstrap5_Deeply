@@ -1,0 +1,67 @@
+.position {
+  color: red;
+}
+
+.position-static,
+.position-relative,
+.position-fixed {
+  border: 1px solid green;
+  padding: 0.5rem;
+}
+
+.position-sticky, .position-fixed-child, .position-fixed-test, .position-static-child {
+  width: 400px;
+  border: 1px solid red;
+}
+
+.position-static-child {
+  margin: auto;
+  position: static;
+}
+
+.position-relative {
+  position: relative;
+  top: 2rem;
+  left: 3rem;
+}
+.position-relative + * {
+  margin-top: 1rem;
+  border: 1px solid blue;
+}
+
+.position-fixed-test {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.position-fixed {
+  height: 400px;
+}
+.position-fixed-child {
+  border: 1px solid #3f51b5;
+  margin: 0;
+  position: fixed;
+  top: 1rem;
+  left: 4rem;
+}
+
+.transform-property {
+  transform: translateX(1rem);
+}
+
+.position-sticky {
+  background-color: green;
+  color: white;
+  position: sticky;
+  top: 3rem;
+  left: 10rem;
+}
+
+.position-sticky-parent {
+  height: 600px;
+  border: 1px solid red;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

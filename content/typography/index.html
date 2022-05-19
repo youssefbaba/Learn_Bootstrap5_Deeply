@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Typography</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Css Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="text-danger my-3">Headings</h1>
+    <!-- 
+        Classes .h1 , .h2 , .h3 , .h4 , .h5 , .h6 
+        -we use these classes when we  want to match the font styling of a heading but cannot use the associated HTML element.
+        - apply  font-size, font-weight, and line-height for element .
+    -->
+    <h1 class="h5">This Is Heading h1</h1>
+    <h2 class="h6">This is Heading h3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <h2 class="h6">This is Heading h3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <h2 class="h6">This is Heading h2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, recusandae?</p>
+    <hr>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p class="h2">Lorem ipsum dolor sit.</p>
+    <h3>Lorem ipsum dolor sit.</h3>
+    <p class="h3">Lorem ipsum dolor sit.</p>
+
+    <h1 class="text-danger my-3">Customizing headings</h1>
+    <h3>
+        Fancy display heading
+        <small class="text-muted">With faded secondary text</small>
+    </h3>
+
+    <h1 class="text-danger my-3">Display Headings</h1>
+    <!-- 
+        - classes  .display-1 , .display-2 , .display-3 , .display-4 , .display-5 , .display-6
+        - When you need a heading to stand out, consider using a display heading , Display headings are displayed in larger font-size but lighter font-weight.
+        - you can use display heading  with any html element .
+        - apply font-size, font-weight, and line-height for element .
+    -->
+    <h1>Lorem ipsum dolor sit</h1>
+    <h1 class="display-1">Lorem ipsum dolor sit</h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2 class="display-2">Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore?</p>
+    <p class="display-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore?</p>
+
+    <h1 class="text-danger my-3">Lead</h1>
+    <!-- 
+        - class .lead 
+        - Make a paragraph stand out by adding .lead.
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolores!</p>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolores!</p>
+
+    <h1 class="text-danger my-3">Inline Element Using Html Element</h1>
+    <p><mark>Highlighted or Marked text.</mark></p>
+    <p><del>Deleted text.</del></p>
+    <p><s>Text that is no longer accurate or incorrect.</s></p>
+    <p><ins>Inserted text.</ins></p>
+    <p><u>Underlined text.</u></p>
+    <p><small>Fine print.</small></p>
+    <p><strong> Strong text</strong></p>
+    <p><em>Emphasized text.</em></p>
+    <p><b>Bold text.</b></p>
+    <p><i>Alternate voice, technical term etc.</i></p>
+
+    <h1 class="text-danger my-3">Inline styles using classes</h1>
+    <p><span class="mark">Highlighted text.</span></p>
+    <p><span class="small">Fine print.</span></p>
+    <p><span class="text-decoration-underline">Underlined text.</span></p>
+    <p><span class="text-decoration-line-through">Text that is no longer accurate or incorrect</span></p>
+
+    <h1 class="text-danger my-3">Text utilities</h1>
+
+    <!-- 
+        -  classes: .text-{start , center , end} for  xs
+        -  classes: .text-{breakpoint}-{start , center , end} for   sm , md , lg , xl , xxl
+        .text-start = text-align:left if direction ltr and  text-align:right if direction rtl
+        .text-end = text-align:right if direction ltr and  text-align:left if direction rtl
+        .text-center = text-align:center if direction ltr and  text-align:center if direction rtl
+    -->
+    <h2 class="text-primary my-2">Text alignment</h2>
+
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+    <p class="text-end">End aligned text on all viewport sizes.</p>
+    <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+    <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+    <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+    <p class="text-xl-start">Start aligned text on viewports sized XL (extra large) or wider.</p>
+
+    <h4 class="h5 text-secondary mt-3">All breakpoints</h4>
+
+    <p class="text-start">Left-aligned text.</p>
+    <p class="text-center">Center-aligned text.</p>
+    <p class="text-end">Right-aligned text.</p>
+
+    <h4 class="h5 text-secondary mt-3">Responsive</h4>
+
+    <p class="text-sm-end">Right-aligned text for breakpoint sm and up.</p>
+    <p class="text-md-end">Right-aligned text for breakpoint md and up.</p>
+    <p class="text-lg-end">Right-aligned text for breakpoint lg and up.</p>
+    <p class="text-xl-end">Right-aligned text for breakpoint xl and up.</p>
+    <p class="text-xxl-end">Right-aligned text for breakpoint xxl and up.</p>
+    <p class="text-sm-center">Center-aligned text for breakpoint sm and up.</p>
+    <p class="text-md-center">Center-aligned text for breakpoint md and up.</p>
+    <p class="text-lg-center">Center-aligned text for breakpoint lg and up.</p>
+    <p class="text-xl-center">Center-aligned text for breakpoint xl and up.</p>
+    <p class="text-xxl-center">Center-aligned text for breakpoint xxl and up.</p>
+    <p class="text-end text-sm-start">Right-aligned text as default. Left-aligned text for breakpoint sm and up.</p>
+    <p class="text-end text-md-start">Right-aligned text as default. Left-aligned text for breakpoint md and up.</p>
+    <p class="text-end text-lg-start">Right-aligned text as default. Left-aligned text for breakpoint lg and up.</p>
+    <p class="text-end text-xl-start">Right-aligned text as default. Left-aligned text for breakpoint xl and up.</p>
+    <p class="text-end text-xxl-start">Right-aligned text as default. Left-aligned text for breakpoint xxl and up.</p>
+
+
+    <h2 class="text-primary">Test For White Space</h2>
+    <!-- 
+        - U+0009 TAB =>  Tabulation
+        - U+000A LF => New Line
+        - U+000D CR and U+000C FF  =>  Line break
+        - U+0020 SPACE => more than one espace
+        - Windows editors often still use the combination of both ( new line and line break ) as \r\n in text files => Newline characters = new line = line break
+
+    -->
+    <p class="p-1 bg-success rounded test-white-space text-danger">
+        <span class="text-light">Line 1</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias laborum
+        officiis et tempora fugiat.
+        <span class="text-light">Line 2</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias
+        laborum.
+        <span class="text-light">Line 3</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias
+        laborum. <br>
+        <span class="text-light">Line 4</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+        dolor sit amet. <br>
+        <span class="text-light">Line 5</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias
+        laborum.
+        <span class="text-light">Line 6</span>:Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias.
+    </p>
+
+
+    <h2 class="text-primary my-2">Text wrapping and overflow</h2>
+
+    <div class="badge bg-success text-wrap" style="width:6rem;">
+        <p class="m-0">This text should wrap.</p>
+        <p class="m-0">This text should wrap.</p>
+    </div>
+    <div class="bg-info my-3 text-nowrap" style="width:6rem;">
+        This text should overflow the parent.
+    </div>
+
+    <h2 class="text-primary my-2">Test Word break</h2>
+    <!-- 
+        - The word-break property specifies how words should break when reaching the end of a line.
+    -->
+    <div class="border border-danger test-word-break" style="width: 10rem;">
+        hello guys Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+        グレートブリテンおよび北アイルランド連合王国という言葉は本当に長い言葉 how are you
+    </div>
+
+    <h2 class="text-primary my-2">Test word-wrap</h2>
+    <!-- 
+        - 
+    -->
+    <div class="border border-danger test-word-wrap" style="width: 10rem;">
+        hello guys Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+        how are you
+    </div>
+
+
+    <h2 class="text-primary my-2">Word Break In Bootstrap</h2>
+    <!-- 
+        -You can use the class .text-break to prevent long word from breaking (overflow) your layout.
+    -->
+    <div class="container">
+        <div class="row">
+            <h2>Without Break Word</h2>
+            <div class="col-2 bg-warning">
+                hello guys Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+                how are you
+            </div>
+        </div>
+        <div class="row">
+            <h2>With Break Word</h2>
+            <div class="col-2 bg-warning text-break">
+                hello guys Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
+                how are you
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-primary my-2">Text Transform</h2>
+
+    <p class="text-lowercase">lowercase text</p>
+    <p class="text-uppercase">uppercase text</p>
+    <p class="text-capitalize">capitalize text</p>
+
+    <h2 class="text-primary my-2">Font Size</h2>
+    <h1>This Is Heading h1</h1>
+    <p class="fs-1">This Is Paragraph with class .fs-1</p>
+    <h2>This Is Heading h2</h2>
+    <p class="fs-2">This Is Paragraph with class .fs-2</p>
+    <h3>This Is Heading h3</h3>
+    <p class="fs-3">This Is Paragraph with class .fs-3</p>
+    <h4>This Is Heading h4</h4>
+    <p class="fs-4">This Is Paragraph with class .fs-4</p>
+    <h5>This Is Heading h5</h5>
+    <p class="fs-5">This Is Paragraph with class .fs-5</p>
+    <h6>This Is Heading h6</h6>
+    <p class="fs-6">This Is Paragraph with class .fs-6</p>
+
+
+    <h2 class="text-primary my-2">Font Weight and Font Style</h2>
+
+    <p class="fw-normal">Normal weight text.</p>
+    <p class="fw-bold">Bold text.</p>
+    <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+    <p class="fw-light">Light weight text.</p>
+    <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+    <p class="fst-italic">Italic text.</p>
+    <p class="fst-normal">Text with normal font style</p>
+
+
+    <h3 class="text-danger">Test For Lighter And Bolder</h3>
+
+    <p class="fw-normal">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-noraml">
+        <p class="fw-lighter">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="fw-light">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-light">
+        <p class="fw-lighter">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="fw-bold">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-bold">
+        <p class="fw-lighter">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="fw-normal">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-normal">
+        <p class="fw-bolder">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="fw-light">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-light">
+        <p class="fw-bolder">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="fw-bold">Lorem ipsum dolor sit amet.</p>
+    <div class="fw-bold">
+        <p class="fw-bolder">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+    <h2 class="text-primary my-2">Line Height</h2>
+
+    <h4 class="h5 text-muted mt-3">1</h4>
+    <p class="lh-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper
+        ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis.
+        Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur
+        porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.
+    </p>
+    <h4 class="h5 text-muted mt-3">Small</h4>
+    <p class="lh-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper
+        ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis.
+        Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur
+        porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.
+    </p>
+    <h4 class="h5 text-muted mt-3">Base</h4>
+    <p class="lh-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper
+        ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis.
+        Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur
+        porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.
+    </p>
+    <h4 class="h5 text-muted mt-3">Large</h4>
+    <p class="lh-lg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper
+        ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis.
+        Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur
+        porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.
+    </p>
+
+    <h2 class="text-primary my-2">monospace</h2>
+    <!-- 
+        Font Familly monospace
+    -->
+    <p><span>with native font stack : </span>Lorem ipsum dolor sit</p>
+    <p class="font-monospace"><span>with monospace font stack : </span>Lorem ipsum dolor sit</p>
+
+
+    <h2 class="text-primary my-2">Reset Color</h2>
+
+    <div class="text-danger">
+        Danger text : <a href="#" class="text-reset  text-decoration-none">Reset link</a>
+    </div>
+
+    <div class="text-secondary">
+        Secondary text :
+        <code class="text-reset">
+            #include<stdio.h>
+                int main() {
+                printf("Hello Geeks");
+                }
+        </code>
+    </div>
+
+    <h2 class="text-primary my-2">Text Decoration </h2>
+    <p class="text-decoration-underline">Text with text line underneath it</p>
+    <p class="text-decoration-line-through">Text with text line going through it</p>
+    <a href="#" class="text-decoration-none">Link without text decoration</a>
+
+    <h2 class="text-primary my-2">Text truncation</h2>
+    <!-- 
+        - For truncate the text (long content) with an ellipsis 
+        - requires display : block or display : inline-block
+    -->
+    <!-- Block Element -->
+    <div class="row my-3">
+        <div class="col-4 text-truncate border border-danger">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque maiores iste eaque autem
+            pariatur, libero cupiditate voluptatibus debitis suscipit?
+        </div>
+    </div>
+    <!-- Inline Element -->
+    <span class="text-truncate d-inline-block border border-danger" style="max-width:10rem;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, similique quos corrupti praesentium
+        veritatis fuga placeat officia atque corporis sunt?
+    </span>
+
+    <h2 class="text-primary my-2">Text Color </h2>
+
+    <p class="text-primary">Text primary color.</p>
+    <p class="text-secondary">Text secondary color.</p>
+    <p class="text-success">Text success color.</p>
+    <p class="text-danger">Text danger color.</p>
+    <p class="text-warning">Text warning color.</p>
+    <p class="text-info">Text info color.</p>
+    <p class="text-light bg-dark">Text light color with background dark color.</p>
+    <p class="text-dark">Text dark color.</p>
+    <p class="text-body">Text body color.</p>
+    <p class="text-muted">Text muted color.</p>
+    <p class="text-white bg-dark">Text white color with background dark color.</p>
+    <p class="text-white-50 bg-dark">Text white-50 color with background dark color.</p>
+    <p class="text-black-50">Text black-50 color.</p>
+
+
+    <h2 class="text-primary my-2">Background color</h2>
+
+    <p class="bg-primary text-white">Background primary color with text white color.</p>
+    <p class="bg-secondary text-white">Background secondary color with text white color.</p>
+    <p class="bg-success text-white">Background success color with text white color.</p>
+    <p class="bg-danger text-white">Background danger color with text white color.</p>
+    <p class="bg-warning text-white">Background warning color with text white color.</p>
+    <p class="bg-info text-white">Background info color with text white color.</p>
+    <p class="bg-light text-dark">Background light color with text dark color.</p>
+    <p class="bg-dark text-white">Background dark color with text white color.</p>
+    <p class="bg-body text-dark">Background body color with text dark color.</p>
+    <p class="bg-white text-dark">Background white color with text dark color.</p>
+    <p class="bg-transparent text-dark">Background transparent with text dark color.</p>
+
+    <h2 class="text-primary my-2">Blockquotes</h2>
+
+    <h4 class="h5  mt-3 text-danger">Default</h4>
+    <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+
+    <h4 class="h5  mt-3 text-danger">Attribution</h4>
+    <figure>
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Author name in <cite>Source Title</cite></figcaption>
+    </figure>
+
+    <h4 class="h5 text-danger mt-3">Alignment</h4>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Author name in <cite>Source Title</cite></figcaption>
+    </figure>
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Author name in <cite>Source Title</cite></figcaption>
+    </figure>
+
+    <div class="code-example mb-5">
+        <h3 class="component-variation text-primary">Unstyled lists</h3>
+        <div class="code-live">
+            <h4 class="h5 text-danger mt-3">Unordered lists</h4>
+            <ul class="list-unstyled">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <ul>
+                    <li>Item 3.1</li>
+                    <li>Item 3.2</li>
+                    <li>Item 3.3</li>
+                </ul>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+
+            <ul class="list-unstyled border border-primary">
+                <li> Item 1</li>
+                <li> Item 2</li>
+                <li> Item 3</li>
+                <ul class="list-unstyled border border-primary">
+                    <li>Item 3.1</li>
+                    <li>Item 3.2</li>
+                    <li>Item 3.3</li>
+                </ul>
+                <li> Item 4</li>
+                <li> Item 5</li>
+            </ul>
+
+
+            <h4 class="h5 text-danger mt-3">Ordered lists</h4>
+            <ol class="list-unstyled">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <ol>
+                    <li>Item 3.1</li>
+                    <li>Item 3.2</li>
+                    <li>Item 3.3</li>
+                </ol>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+
+            <ol class="list-unstyled border border-primary">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <ol class="list-unstyled border border-primary">
+                    <li>Item 3.1</li>
+                    <li>Item 3.2</li>
+                    <li>Item 3.3</li>
+                </ol>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+        </div>
+    </div>
+    <div class="code-example mb-5">
+        <h3 class="component-variation text-primary">Inline lists</h3>
+        <div class="code-live">
+            <h4 class="h5 text-danger mt-3">Unordered lists</h4>
+            <ul class="list-unstyled">
+                <li class="list-inline-item">Item 1</li>
+                <li class="list-inline-item">Item 2</li>
+                <li class="list-inline-item">Item 3</li>
+            </ul>
+            <hr>
+            <ul class="list-inline">
+                <li class="list-inline-item">Item 1</li>
+                <li class="list-inline-item">Item 2</li>
+                <li class="list-inline-item">Item 3</li>
+            </ul>
+
+            <h4 class="h5 text-danger mt-3">Ordered lists</h4>
+            <ol class="list-unstyled">
+                <li class="list-inline-item">Item 1</li>
+                <li class="list-inline-item">Item 2</li>
+                <li class="list-inline-item">Item 3</li>
+            </ol>
+            <hr>
+            <ol class="list-inline">
+                <li class="list-inline-item">Item 1</li>
+                <li class="list-inline-item">Item 2</li>
+                <li class="list-inline-item">Item 3</li>
+            </ol>
+
+        </div>
+    </div>
+    <div class="code-example mb-5">
+        <h3 class="component-variation text-primary">Description lists</h3>
+        <div class="code-live">
+            <dl class="row">
+                <dt class="col-3">Description lists</dt>
+                <dd class="col-9">A description list is perfect for defining terms.</dd>
+
+                <dt class="col-3">Term</dt>
+                <dd class="col-9">
+                    <p>Definition for the term.</p>
+                    <p>And some more placeholder definition text.</p>
+                </dd>
+
+                <dt class="col-3">Another term</dt>
+                <dd class="col-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+                <dt class="col-3 text-truncate">Truncated trem Lorem ipsum dolor sit amet consectetur.</dt>
+                <dd class="col-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+                <dt class="col-3">Nesting</dt>
+                <dd class="col-9">
+                    <dl class="row">
+                        <dt class="col-3">Nested definition list</dt>
+                        <dd class="col-9">
+                            I heard you like definition lists. Let me put a definition list inside your definition list.
+                        </dd>
+                    </dl>
+                </dd>
+
+
+            </dl>
+        </div>
+        <hr>
+        <div class="code-live">
+            <dl class="row">
+                <dt class="col-sm-3">Term</dt>
+                <dd class="col-sm-9">Description</dd>
+                <dt class="col-sm-3">Very long and truncated term</dt>
+                <dd class="col-sm-9">Description</dd>
+                <dt class="col-sm-3">Term</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">Nested term</dt>
+                        <dd class="col-sm-8">Nested description</dd>
+                        <dt class="col-sm-4">Very long and truncated term</dt>
+                        <dd class="col-sm-8">Nested description</dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    </div> <!-- Optional JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 – Layout: Gutters</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <main>
+        <div class="mt-3">
+            <div class="">
+                <h2 class="component display-4">Gutters</h2>
+                <hr>
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Horizontal</h3>
+
+                    <div class="container border border-primary">
+                        <div class="row my-3">
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                            <div class="col-4 bg-secondary text-white border border-danger">
+                                Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Magni, ipsa adipisci commodi neque autem illum ipsam
+                                at repellat cupiditate. Autem.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                        - Horizontal gutters : padding left and padding right of column 
+                            - .gx-{number[1,....,5]} for xs
+                            - .gx-{breakpoint}-{number[1,....,5]} for sm , md , lg , xl , xxl
+                
+                    -->
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">0</h4>
+                        <div class="container">
+                            <div class="row gx-0">
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">1</h4>
+                        <div class="container">
+                            <div class="row gx-1">
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">2</h4>
+                        <div class="container">
+                            <div class="row gx-2">
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="bg-secondary text-white p-3">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">3</h4>
+                        <div class="container">
+                            <div class="row gx-3">
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">4</h4>
+                        <div class="container">
+                            <div class="row gx-4">
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">5 (Here is problem when with of container 100% )</h4>
+                        <div class="container">
+                            <div class="row gx-5">
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">5 (Solution)</h4>
+                        <div class="container px-4">
+                            <div class="row gx-5">
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">Responsive</h4>
+                        <div class="container">
+                            <div class="row gx-0 gx-sm-1 gx-md-2 gx-lg-3 gx-xl-4 gx-xxl-5">
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col-3 border border-primary">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container mb-3">Vertical</h3>
+
+                    <h3 class=" text-muted container bg-danger">Overflow</h3>
+                    <div class="container">
+                        <div class="row gy-5 border border-info">
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class=" text-muted container bg-danger mt-3">Fixed Overflow</h3>
+                    <div class="container overflow-hidden">
+                        <div class="row gy-5 border border-info">
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                            <div class="col-6 border border-danger">
+                                <div class="p-3 bg-secondary text-white">Custom column padding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                        - Vertical Gutters : margin top of column 
+                            -.gy-{number[1,...,5]} for xs
+                            -.gy-{breakpoint}{number[1,...,5]} for  sm , md , lg , xl , xxl 
+                    -->
+
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">0</h4>
+                        <div class="container">
+                            <div class="row border border-primary gy-0">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">1</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary gy-1">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">2</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary gy-2">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">3</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary gy-3">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">4</h4>
+                        <div class="container overflow overflow-hidden">
+                            <div class="row border border-primary gy-4">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">5</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary gy-5">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">Responsive</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary gy-sm-1 gy-md-2 gy-lg-3 gy-xl-4 gy-xxl-5">
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Horizontal and vertical</h3>
+
+
+
+
+                    <!-- 
+                        - Horizontal & Vertical Gutters : used to control horizontall and vertical gutters 
+                                that means for horizontal gutter (padding left and padding right of column) and for vertical gutter (margin top of column )
+                        -.g-{number[1,...,5]} for xs
+                        -.g-{breakpoint}-{number[1,...,5]} for  sm , md , lg , xl , xxl
+
+                    -->
+
+
+
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">0</h4>
+                        <div class="container">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">1</h4>
+                        <div class="container">
+                            <div class="row g-1">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">2</h4>
+                        <div class="container">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">3</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary g-3">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">4</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row border border-primary g-4">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">5</h4>
+                        <div class="container overflow-hidden">
+                            <div class="row g-5 border border-primary">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">Responsive</h4>
+                        <div class="container overflow overflow-hidden">
+                            <div class="row border border-primary g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-5">
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">Row columns</h3>
+                    <div class="code-live">
+                        <div class="container">
+                            <div
+                                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-1 g-sm-2 g-md-3 g-lg-4">
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 bg-secondary text-white">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-live">
+                        <h4 class="h5 text-muted mt-3 container">2</h4>
+                        <div class="container">
+                            <div class="row row-cols-2 g-2">
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">3</h4>
+                        <div class="container">
+                            <div class="row row-cols-3 g-3">
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="h5 text-muted mt-3 container">4</h4>
+                        <div class="container">
+                            <div class="row row-cols-4 g-4">
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example mb-5">
+                    <h3 class="component-variation text-muted container">No gutters</h3>
+                    <div class="code-live">
+                        <div class="container border border-primary">
+                            <div class="row g-0">
+                                <div class="col-md-6 col-lg-3 bg-secondary text-white py-3 border border-danger">
+                                    Column
+                                </div>
+                                <div class="col-md-6 col-lg-3 bg-secondary text-white py-3 border border-danger">
+                                    Column
+                                </div>
+                                <div class="col-md-6 col-lg-3 bg-secondary text-white py-3 border border-danger">
+                                    Column
+                                </div>
+                                <div class="col-md-6 col-lg-3 bg-secondary text-white py-3 border border-danger">
+                                    Column
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-live mt-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 order-lg-last bg-light border py-3">Article 1</div>
+                            <div class="col-12 col-md-6 col-lg-3 order-lg-4 bg-light border py-3">Article 2</div>
+                            <div class="col-12 col-md-6 col-lg-3 order-lg-2 bg-light border py-3">Article 3</div>
+                            <div class="col-12 col-md-6 col-lg-3 order-lg-first bg-light border py-3">Article 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

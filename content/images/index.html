@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 – Content: Images</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h2 class="component display-4">Images</h2>
+                    <hr>
+
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-primary">Default</h3>
+                        <div class="code-live mt-3 border border-2 border-dark py-3" style="width:500px;">
+                            <img src="https://via.placeholder.com/600x250/F00/FFF?text=Youssef+Baba " alt="Image">
+                        </div>
+
+                        <div class="code-example mb-5">
+                            <h3 class="component-variation text-primary">Responsive Images</h3>
+                            <div class="code-live py-3 border border border-2 border-dark ">
+                                <img src="https://via.placeholder.com/600x250/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="code-example mb-5">
+                            <h3 class="component-variation text-primary">Rounded</h3>
+                            <h4 class="text-danger">Rounded Image</h4>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/200x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded">
+                            </div>
+                            <h4 class="text-danger">Circle Image</h4>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/200x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded-circle">
+                            </div>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/400x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded-circle">
+                            </div>
+                            <h4 class="text-danger">Pill Image</h4>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/400x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded-pill">
+                            </div>
+                        </div>
+
+                        <div class="code-example mb-5">
+                            <h3 class="component-variation text-primary">Thumbnail</h3>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/200x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="img-thumbnail">
+                            </div>
+                            <div class="code-live">
+                                <img src="https://via.placeholder.com/200x200/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="p-2 bg-primary border border-2 border-warning">
+                            </div>
+                        </div>
+
+                        <div class="code-example mb-5">
+                            <h3 class="component-variation text-primary">Aligning images </h3>
+                            <!-- 
+                            - For alignement images i can use float utilities or text alignement or margin utilities
+                        -->
+                            <h4 class="h5 text-danger mt-3">Left alignment</h4>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image">
+                            </div>
+                            <div class="code-live border border-2 border-dark p-3 text-start">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded">
+                            </div>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="float-start rounded">
+                                <p class="clearfix m-0"></p>
+                            </div>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="d-block me-auto rounded">
+                            </div>
+
+                            <h4 class="h5  text-danger mt-3">Center alignment </h4>
+                            <div class="code-live border border-2 border-dark p-3 text-center">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded">
+                            </div>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="d-block mx-auto rounded">
+                            </div>
+                            <h4 class="h5 text-danger mt-3">Right alignment </h4>
+                            <div class="code-live border border-2 border-dark p-3 text-end">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="rounded">
+                            </div>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Youssef+Baba " alt="Image"
+                                    class="d-block ms-auto  rounded">
+                            </div>
+
+                            <h4 class="h5 text-danger mt-3">Horizontal alignment</h4>
+                            <div class="code-live border border-2 border-dark p-3">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Image_1 " alt="Image_01"
+                                    class="float-start rounded">
+                                <p class="m-0 clearfix"></p>
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Image_2 " alt="Image_02"
+                                    class="float-end rounded">
+                                <p class="m-0 clearfix"></p>
+                            </div>
+                        </div>
+
+                        <div class="code-example mb-5">
+                            <h3 class="component-variation text-primary">Picture element</h3>
+                            <div class="code-live">
+                                <h4 class="text-danger">Use Case Of Picture</h4>
+                                <h6 class="text-secondary">Bandwidth</h6>
+                                <picture>
+                                    <source media="(min-width: 800px)" srcset="media/image-03.gif">
+                                    <source media="(min-width: 500px)" srcset="media/image-01.jpg">
+                                    <img src="https://via.placeholder.com/100x100/F00/FFF?text=Image_2 "
+                                        alt="fullback_image">
+                                </picture>
+                                <h6 class="text-secondary">Format Support</h6>
+                                <picture>
+                                    <source srcset="media/image-01.jpg">
+                                    <source srcset="media/image-02.png">
+                                    <source srcset="media/image-03.gif">
+                                    <img src="https://via.placeholder.com/100x100/F00/FFF?text=Image_2 "
+                                        alt="fullback_image">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="code-live">
+                            <h4 class="text-danger">Picture In Bootstrap </h4>
+                            <!-- 
+                                -If you are using the <picture> element to specify multiple <source> elements for a specific <img>
+                                    make sure to add the .img-* classes to the <img> and not to the <picture> tag.
+                            -->
+                            <picture>
+                                <source srcset="media/image-03.gif">
+                                <source srcset="media/image-01.jpg">
+                                <img src="https://via.placeholder.com/100x100/F00/FFF?text=Image_2 "
+                                    alt="fullback_image" class="img-fluid img-thumbnail">
+
+                            </picture>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

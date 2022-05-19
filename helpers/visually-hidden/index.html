@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpers: Visually hidden</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h2 class="component display-4 text-primary">Visually hidden</h2>
+                    <hr>
+
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-danger">Default</h3>
+                        <div class="code-live">
+                            <h4 class="visually-hidden">Title for screen readers</h4>
+                        </div>
+                    </div>
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-danger">Focusable</h3>
+                        <div class="code-live">
+                            <a href="#" class="visually-hidden-focusable">Skip to main content</a>
+                            <input type="text" placeholder="please wrtie something here"
+                                class="visually-hidden-focusable">
+                            <select name="cars" id="cars" class="visually-hidden-focusable">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <textarea name="w3review" class="visually-hidden-focusable">
+                                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                            </textarea>
+                            <button type="submit" class="visually-hidden-focusable">Submit</button>
+                            <h2 class="visually-hidden-focusable">Hiho</h2>
+                            <h2 tabindex="0" class="visually-hidden-focusable">Html Element With attribute tabindex</h2>
+                        </div>
+                    </div>
+                    <div class="code-example mb-5">
+                        <h3 class="component-variation text-danger">Focusable Container</h3>
+                        <div class="code-live">
+                            <div class="visually-hidden-focusable">
+                                <h1>This Is Heading h1</h1>
+                                <h2>This Is Heading h2</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <a href="#">Skip to main content</a>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h2>This Is Heading h2</h2>
+                                <button type="submit">Submit</button>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
