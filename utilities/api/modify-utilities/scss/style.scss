@@ -1,0 +1,168 @@
+/* first method */
+
+/*
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+	"width":
+		map-merge(
+			map-get($utilities, "width"),
+			(
+				values:
+					map-merge(
+						map-get(map-get($utilities, "width"), "values"),
+						(
+							10: 10%,
+							60: 60%,
+						)
+					),
+			)
+		),
+	"opacity": (
+		property: opacity,
+		responsive: true,
+		values: (
+			0: 0,
+			10: 0.1,
+			20: 0.2,
+			25: 0.25,
+			50: 0.5,
+			75: 0.75,
+			100: 1,
+		),
+	),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*/
+
+/* Second Method */
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+$utilities: map-merge(
+	$utilities,
+	(
+		"width":
+			map-merge(
+				map-get($utilities, "width"),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, "width"), "values"),
+							(
+								10: 10%,
+								60: 60%,
+							)
+						),
+				)
+			),
+		"opacity": (
+			property: opacity,
+			responsive: true,
+			values: (
+				0: 0,
+				10: 0.1,
+				20: 0.2,
+				25: 0.25,
+				50: 0.5,
+				75: 0.75,
+				100: 1,
+			),
+		),
+	)
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+map-get($utilities, "width")
+
+- output : 
+
+(
+    property: width,
+    class: w,
+    values: (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+    )
+)
+
+map-get(map-get($utilities, "width"), "values")
+
+- output : 
+
+(
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+)
+
+
+map-merge(
+    map-get(map-get($utilities, "width"), "values"),
+    (
+        10: 10%,
+		60: 60%,
+    )
+),
+- output : 
+(
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+    10: 10%,
+	60: 60%,
+)
+
+
+map-merge(
+map-get($utilities, "width"),
+(
+    values:
+        map-merge(
+            map-get(map-get($utilities, "width"), "values"),
+            (
+                10: 10%,
+                60: 60%,
+            )
+        ),
+)
+),
+- output : 
+
+(
+    property: width,
+    class: w,
+    values: (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+    10: 10%,
+	60: 60%,
+    )
+)
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,170 @@
+/* First Method */
+
+/*
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+	"border": (
+		property: border,
+		responsive: true,
+		values: (
+			null: $border-width solid $border-color,
+			0: 0,
+		),
+	),
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+*/
+
+/* Second Method */
+
+/*
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"border": (
+			property: border,
+			responsive: true,
+			values: (
+				null: $border-width solid $border-color,
+				0: 0,
+			),
+		),
+	)
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*/
+
+/* Third Method */
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"border":
+			map-merge(
+				map-get($utilities, "border"),
+				(
+					responsive: true,
+				)
+			),
+	)
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+
+map-get($utilities , "border")
+
+- output : 
+(
+	property: border,
+	values: (
+	null: $border-width solid $border-color,
+	0: 0,
+	)
+)
+
+
+map-merge(
+	map-get($utilities , "border") , (responsive : true)
+)
+
+- output: 
+(
+	property: border,
+	values: (
+	null: $border-width solid $border-color,
+	0: 0,
+	),
+	responsive : true
+)
+
+$utilities : map-merge( $utilities , 
+	("border" : 
+		map-merge(
+			map-get($utilities , "border") , (responsive : true)
+		)
+	)
+)
+*/
+
+/*
+
+"border": (
+	property: border,
+	responsive : true,
+	values: (
+        null: $border-width solid $border-color,
+        0: 0,
+    )
+),
+
+
+- output : 
+
+.border{
+	border : 1px solid #dee2e6 !important;
+}
+.border-0 {
+	border : 0 !important;
+}
+
+- sm
+.border-sm{
+	border : 1px solid #dee2e6 !important;
+}
+.border-sm-0 {
+	border : 0 !important;
+}
+
+- md
+.border-md{
+	border : 1px solid #dee2e6 !important;
+}
+.border-md-0 {
+	border : 0 !important;
+}
+
+- lg
+.border-lg{
+	border : 1px solid #dee2e6 !important;
+}
+.border-lg-0 {
+	border : 0 !important;
+}
+
+- xl
+.border-xl{
+	border : 1px solid #dee2e6 !important;
+}
+.border-xl-0 {
+	border : 0 !important;
+}
+
+- xxl
+.border-xxl{
+	border : 1px solid #dee2e6 !important;
+}
+.border-xxl-0 {
+	border : 0 !important;
+}
+
+*/

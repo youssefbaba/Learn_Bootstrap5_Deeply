@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities: Borders</title>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Styling to better show these examples -->
+    <style type="text/css">
+        div[class^="border"],
+        div[class^="rounded"] {
+            display: inline-block;
+            margin: 1em;
+            width: 5em;
+            height: 5em;
+            background-color: #f5f5f5;
+        }
+
+        div[class$="-0"] {
+            border: 1px solid #dee2e6;
+        }
+
+        .code-live img {
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <h2 class="component display-4">Borders</h2>
+                    <hr>
+
+                    <div class="code-example mb-5"
+                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+                        <h3 class="component-variation text-muted">Additive</h3>
+                        <div class="code-live">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5"
+                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}&#10;div[class$="-0"] {&#10;&#9;border: 1px solid #dee2e6;&#10;}'>
+                        <h3 class="component-variation text-muted">Subtractive</h3>
+                        <div class="code-live">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5"
+                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+                        <h3 class="component-variation text-muted">Color</h3>
+                        <div class="code-live">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5"
+                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+                        <h3 class="component-variation text-muted">Width</h3>
+                        <div class="code-live">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5"
+                        data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+                        <h3 class="component-variation text-muted">Radius</h3>
+                        <div class="code-live">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/200x100.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="code-example mb-5"
+                        data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+                        <h3 class="component-variation text-muted">Radius size</h3>
+                        <div class="code-live">
+                            <img src="../img/100x100.png" alt="" style="border-radius: 10px;">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                            <img src="../img/100x100.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

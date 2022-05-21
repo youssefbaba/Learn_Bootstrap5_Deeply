@@ -1,0 +1,143 @@
+/* First Method */
+/*
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+$utilities: (
+	"margin-start": (
+		responsive: true,
+		property: margin-left,
+		class: ml,
+		values:
+			map-merge(
+				$spacers,
+				(
+					auto: auto,
+				)
+			),
+	),
+	"margin-end": (
+		responsive: true,
+		property: margin-right,
+		class: mr,
+		values:
+			map-merge(
+				$spacers,
+				(
+					auto: auto,
+				)
+			),
+	),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*/
+
+/* Second Method */
+/*
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+$utilities: map-merge(
+	$utilities,
+	(
+		"margin-start": (
+			responsive: true,
+			property: margin-left,
+			class: ml,
+			values:
+				map-merge(
+					$spacers,
+					(
+						auto: auto,
+					)
+				),
+		),
+		"margin-end": (
+			responsive: true,
+			property: margin-right,
+			class: mr,
+			values:
+				map-merge(
+					$spacers,
+					(
+						auto: auto,
+					)
+				),
+		),
+	)
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*/
+
+/* Third Method */
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"margin-start":
+			map-merge(
+				map-get($utilities, "margin-start"),
+				(
+					class: ml,
+				)
+			),
+		"margin-end":
+			map-merge(
+				map-get($utilities, "margin-end"),
+				(
+					class: mr,
+				)
+			),
+	)
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+
+"margin-end": (
+	responsive: true,
+	property: margin-right,
+	class: me,
+	values: map-merge($spacers, (auto: auto))
+),
+
+map-get($utilities , "margin-end")
+- output : 
+
+(
+	responsive: true,
+	property: margin-right,
+	class: me,
+	values: map-merge($spacers, (auto: auto))
+)
+
+map-merge(map-get($utilities , "margin-end") , (class: mr))
+
+- output : 
+(
+	responsive: true,
+	property: margin-right,
+	class: mr,
+	values: map-merge($spacers, (auto: auto))
+)
+
+
+map-merge($utilities , (
+	"margin-end" : (
+		map-merge(map-get($utilities , "margin-end") , (class: mr))
+	) 
+)
+
+
+*/

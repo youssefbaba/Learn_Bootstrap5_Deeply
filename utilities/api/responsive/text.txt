@@ -1,0 +1,2 @@
+#############  resposive ##############
+- Boolean indicating if responsive classes should be generated (sm , ms , ls , xl , xxl).

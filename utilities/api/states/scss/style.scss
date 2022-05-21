@@ -1,0 +1,268 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+	"opacity": (
+		property: opacity,
+		class: opacity,
+		state: hover,
+		values: (
+			0: 0,
+			25: 0.25,
+			50: 0.5,
+			75: 0.75,
+			100: 1,
+		),
+	),
+	"background-color": (
+		property: background-color,
+		class: bg,
+		state: hover focus,
+		values:
+			map-merge(
+				$theme-colors,
+				(
+					"black": $black,
+					"white": $white,
+					"body": $body-bg,
+					"transparent": transparent,
+				)
+			),
+	),
+	"rounded": (
+		property: border-radius,
+		class: rounded,
+		state: hover,
+		values: (
+			null: $border-radius,
+			0: 0,
+			1: $border-radius-sm,
+			2: $border-radius,
+			3: $border-radius-lg,
+			circle: 50%,
+			pill: $border-radius-pill,
+		),
+	),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+-output 1  :
+
+.opacity-0-hover:hover{
+    opacity: 0 !important ;
+}
+.opacity-25-hover:hover{
+    opacity: 0.25 !important ;
+}
+.opacity-50-hover:hover{
+    opacity: 0.5 !important ;
+}
+.opacity-75-hover:hover{
+    opacity: 0.75 !important ;
+}
+.opacity-100-hover:hover{
+    opacity: 1 !important ;
+}
+.opacity-0-hover:hover{
+    opacity: 0 !important ;
+}
+
+-output 2 : 
+
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+.bg-primary-hover:hover {
+  background-color: #0d6efd !important;
+}
+
+.bg-primary-focus:focus {
+  background-color: #0d6efd !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.bg-secondary-hover:hover {
+  background-color: #6c757d !important;
+}
+
+.bg-secondary-focus:focus {
+  background-color: #6c757d !important;
+}
+
+.bg-success {
+  background-color: #198754 !important;
+}
+
+.bg-success-hover:hover {
+  background-color: #198754 !important;
+}
+
+.bg-success-focus:focus {
+  background-color: #198754 !important;
+}
+
+.bg-info {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-info-hover:hover {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-info-focus:focus {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-warning-hover:hover {
+  background-color: #ffc107 !important;
+}
+
+.bg-warning-focus:focus {
+  background-color: #ffc107 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.bg-danger-hover:hover {
+  background-color: #dc3545 !important;
+}
+
+.bg-danger-focus:focus {
+  background-color: #dc3545 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-light-hover:hover {
+  background-color: #f8f9fa !important;
+}
+
+.bg-light-focus:focus {
+  background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-dark-hover:hover {
+  background-color: #212529 !important;
+}
+
+.bg-dark-focus:focus {
+  background-color: #212529 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.bg-black-hover:hover {
+  background-color: #000 !important;
+}
+
+.bg-black-focus:focus {
+  background-color: #000 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-white-hover:hover {
+  background-color: #fff !important;
+}
+
+.bg-white-focus:focus {
+  background-color: #fff !important;
+}
+
+.bg-body {
+  background-color: #fff !important;
+}
+
+.bg-body-hover:hover {
+  background-color: #fff !important;
+}
+
+.bg-body-focus:focus {
+  background-color: #fff !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-transparent-hover:hover {
+  background-color: transparent !important;
+}
+
+.bg-transparent-focus:focus {
+  background-color: transparent !important;
+}
+
+-  output 3 :
+
+.rounded {
+    border-radius : 0.25rem !important ;
+}
+.rounded-hover:hover {
+    border-radius : 0.25rem !important ;
+}
+.rounded-0 {
+    border-radius : 0rem !important ;
+}
+.rounded-0-hover:hover {
+    border-radius : 0rem !important ;
+}
+.rounded-1 {
+    border-radius : 0.2rem !important ;
+}
+.rounded-1-hover:hover {
+    border-radius : 0.2rem !important ;
+}
+.rounded-2 {
+    border-radius : 0.25rem !important ;
+}
+.rounded-2-hover:hover {
+    border-radius : 0.25rem !important ;
+}
+.rounded-3 {
+    border-radius : 0.3rem !important ;
+}
+.rounded-3-hover:hover {
+    border-radius : 0.3rem !important ;
+}
+.rounded-circle {
+    border-radius : 50% !important ;
+}
+.rounded-circle-hover:hover {
+    border-radius : 50% !important ;
+}
+.rounded-pill {
+    border-radius : 50rem !important ;
+}
+.rounded-pill-hover:hover {
+    border-radius : 50rem !important ;
+}
+
+
+
+
+*/

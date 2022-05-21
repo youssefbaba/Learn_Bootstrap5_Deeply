@@ -1,0 +1,60 @@
+############ css-var  ########
+- 	Boolean to generate CSS variables (local variables ) instead of CSS rules (selector{ property1 : value1 ; property2 : value2 ; ....}).
+
+$utilities: (
+  "text-opacity": (
+    css-var: true,
+    class: text-opacity,
+    values: (
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1
+    )
+  ),
+);
+
+- output :
+.text-opacity-25{
+    --bs-text-opacity:0.25 !important ;
+}
+.text-opacity-50{
+    --bs-text-opacity:0.5 !important ;
+}
+.text-opacity-75{
+    --bs-text-opacity:0.75 !important ;
+}
+.text-opacity-100{
+    --bs-text-opacity:0.1 !important ;
+}
+
+
+"bg-opacity": (
+    css-var: true,
+    class: bg-opacity,
+    values: (
+    10: .1,
+    25: .25,
+    50: .5,
+    75: .75,
+    100: 1
+    )
+),
+
+-output :
+.bg-opacity-10{
+    --bs-bg-opacity : 0.1 !important ;
+}
+.bg-opacity-25{
+    --bs-bg-opacity : 0.25 !important ;
+}
+.bg-opacity-50{
+    --bs-bg-opacity : 0.5 !important ;
+}
+.bg-opacity-75{
+    --bs-bg-opacity : 0.75 !important ;
+}
+.bg-opacity-100{
+    --bs-bg-opacity : 1 !important ;
+}
+

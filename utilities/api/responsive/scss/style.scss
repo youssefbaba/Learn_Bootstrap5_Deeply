@@ -1,0 +1,130 @@
+$utilities: (
+	"opacity": (
+		property: opacity,
+		responsive: true,
+		values: (
+			0: 0,
+			25: 0.25,
+			50: 0.5,
+			75: 0.75,
+			100: 1,
+		),
+	),
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+- output  : 
+
+- xs
+
+.opacity-0{
+	opacity : 0 !important ;
+}
+.opacity-25{
+	opacity : 0.25 !important ;
+}
+.opacity-50{
+	opacity : 0.5 !important ;
+}
+.opacity-75{
+	opacity : 0.75 !important ;
+}
+.opacity-100{
+	opacity : 1 !important ;
+}
+
+- sm
+
+.opacity-sm-0{
+	opacity : 0 !important ;
+}
+.opacity-sm-25{
+	opacity : 0.25 !important ;
+}
+.opacity-sm-50{
+	opacity : 0.5 !important ;
+}
+.opacity-sm-75{
+	opacity : 0.75 !important ;
+}
+.opacity-sm-100{
+	opacity : 1 !important ;
+}
+
+- md
+
+.opacity-md-0{
+	opacity : 0 !important ;
+}
+.opacity-md-25{
+	opacity : 0.25 !important ;
+}
+.opacity-md-50{
+	opacity : 0.5 !important ;
+}
+.opacity-md-75{
+	opacity : 0.75 !important ;
+}
+.opacity-md-100{
+	opacity : 1 !important ;
+}
+
+
+- lg
+
+.opacity-lg-0{
+	opacity : 0 !important ;
+}
+.opacity-lg-25{
+	opacity : 0.25 !important ;
+}
+.opacity-lg-50{
+	opacity : 0.5 !important ;
+}
+.opacity-lg-75{
+	opacity : 0.75 !important ;
+}
+.opacity-lg-100{
+	opacity : 1 !important ;
+}
+
+
+- xl
+
+.opacity-xl-0{
+	opacity : 0 !important ;
+}
+.opacity-xl-25{
+	opacity : 0.25 !important ;
+}
+.opacity-xl-50{
+	opacity : 0.5 !important ;
+}
+.opacity-xl-75{
+	opacity : 0.75 !important ;
+}
+.opacity-xl-100{
+	opacity : 1 !important ;
+}
+
+- xxl
+
+.opacity-xxl-0{
+	opacity : 0 !important ;
+}
+.opacity-xxl-25{
+	opacity : 0.25 !important ;
+}
+.opacity-xxl-50{
+	opacity : 0.5 !important ;
+}
+.opacity-xxl-75{
+	opacity : 0.75 !important ;
+}
+.opacity-xxl-100{
+	opacity : 1 !important ;
+}
+
+
+*/

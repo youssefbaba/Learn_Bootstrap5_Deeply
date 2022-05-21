@@ -1,0 +1,7 @@
+############# Override utilities  #########
+- Override or modify  existing utilities by using the same key
+- map-merge($map1 ,$map2) :
+    - If both $map1 and $map2 have the same key, $map2‘s value takes precedence.
+    - All keys in the returned map that also appear in $map1 have the same order as in $map1. New keys from $map2 appear at the end of the map.
+
+

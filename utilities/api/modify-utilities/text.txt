@@ -1,0 +1,1 @@
+- map-get ($map , $key) : returns the value in $map associated with $key
