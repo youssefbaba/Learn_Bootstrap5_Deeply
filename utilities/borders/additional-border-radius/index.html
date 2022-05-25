@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Borders</title>
+		<!-- Bootstrap Css -->
+		<!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Styling to better show these examples -->
+		<style type="text/css">
+			/* any class start exactly by  string "border" or "rounded"  */
+			div[class^="border"],
+			div[class^="rounded"] {
+				display: inline-block;
+				margin: 1em;
+				width: 5em;
+				height: 5em;
+				background-color: #f5f5f5;
+			}
+
+			/* any class ends exactly by string "-0" */
+			div[class$="-0"] {
+				border: 1px solid #dee2e6;
+			}
+
+			.code-live img {
+				margin: 1em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary"></h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Use Mixins Of Border Radius
+							</h3>
+							<div class="code-live">
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="default-border-radius"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="border-radius"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="default-border-top-radius"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="border-top-radius"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="default-border-end-radius"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="border-end-radius"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

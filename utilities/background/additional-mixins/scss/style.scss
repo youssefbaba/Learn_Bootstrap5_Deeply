@@ -1,0 +1,20 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$enable-gradients: true;
+.gradient-bg-danger {
+	@include gradient-bg($danger);
+}
+.gradient-bg-success {
+	@include gradient-bg($success);
+}
+.gradient-x-danger-warning {
+	@include gradient-x($danger, $warning);
+}
+.gradient-x-warning-primary {
+	@include gradient-x($warning, $primary);
+}
+.gradient-y-danger-warning {
+	@include gradient-y($danger, $warning);
+}
+.gradient-y-warning-primary {
+	@include gradient-y($warning, $primary);
+}

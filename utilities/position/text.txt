@@ -1,0 +1,119 @@
+############## Position Values #############
+
+- from  _utilities.scss =>
+  "position": (
+      property: position,
+      values: static relative absolute fixed sticky
+)
+.position-static{
+    position: static !important ; 
+}
+.position-relative{
+    position: relative !important ; 
+}
+.position-absolute{
+    position: absolute !important ; 
+}
+.position-fixed{
+    position: fixed !important ; 
+}
+.position-sticky{
+    position: sticky !important ; 
+
+
+########### Arrange Elements ############
+- form _utilities.scss =>
+
+- 
+"top": (
+      property: top,
+      values: $position-values
+)
+"bottom": (
+    property: bottom,
+    values: $position-values
+)
+"start": (
+    property: left,
+    class: start,
+    values: $position-values
+)
+"end": (
+    property: right,
+    class: end,
+    values: $position-values
+)
+
+- from _variables.scss =>
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+) 
+
+-final output 
+
+.top-0{
+    top : 0 ! important;
+}
+.top-50{
+    top : 50% ! important;
+}
+.top-100{
+    top : 100% ! important;
+}
+
+.bottom-0{
+    bottom : 0 !important ;
+}
+.bottom-50 {
+    bottom : 50% !important ;
+}
+.bottom-100 {
+    bottom : 100% !important ;
+}
+
+
+.end-0{
+    right : 0 !important ;
+}
+.end-50 {
+    right : 50% !important ;
+}
+.end-100 {
+    right : 100% !important ;
+}
+
+.star-0{
+    left : 0 !important ;
+}
+.star-50 {
+    left : 50% !important ;
+}
+.star-100 {
+    left : 100% !important ;
+}
+
+############ Center Elements #############
+- from _utilities.scss =>
+"translate-middle": (
+    property: transform,
+    class: translate-middle,
+    values: (
+    null: translate(-50%, -50%),
+    x: translateX(-50%),
+    y: translateY(-50%),
+    )
+)
+
+.translate-middle{
+    transform :  translate(-50%, -50%) !important ;
+}
+.translate-middle-x{
+    transform :  translateX(-50%) !important ;
+}
+.translate-middle-y{
+    transform :  translateY(-50%) !important ;
+}
+
+

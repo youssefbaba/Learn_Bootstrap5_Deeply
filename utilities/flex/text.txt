@@ -1,0 +1,1218 @@
+##############  enable context flex ########
+- Apply display utilities (.d-inline-flex , .d-flex  ) to create a flexbox container and transform direct children elements into flex items
+- .d-flex  :  block flex container
+- .d-inline-flex  :  inline flex container
+- Responsive variations ( sm , md , lg , xl , xxl ) also exist for .d-flex and .d-inline-flex.
+    - .d-flex
+    - .d-inline-flex
+    - .d-sm-flex
+    - .d-sm-inline-flex
+    - .d-md-flex
+    - .d-md-inline-flex
+    - .d-lg-flex
+    - .d-lg-inline-flex
+    - .d-xl-flex
+    - .d-xl-inline-flex
+    - .d-xxl-flex
+    - .d-xxl-inline-flex
+
+########## flex direction ###########
+- .flex-row
+- .flex-row-reverse
+- .flex-column
+- .flex-column-reverse
+- .flex-sm-row
+- .flex-sm-row-reverse
+- .flex-sm-column
+- .flex-sm-column-reverse
+- .flex-md-row
+- .flex-md-row-reverse
+- .flex-md-column
+- .flex-md-column-reverse
+- .flex-lg-row
+- .flex-lg-row-reverse
+- .flex-lg-column
+- .flex-lg-column-reverse
+- .flex-xl-row
+- .flex-xl-row-reverse
+- .flex-xl-column
+- .flex-xl-column-reverse
+- .flex-xxl-row
+- .flex-xxl-row-reverse
+- .flex-xxl-column
+- .flex-xxl-column-reverse
+ 
+-from _utilities.scss => 
+
+    "flex-direction": (
+      responsive: true,
+      property: flex-direction,
+      class: flex,
+      values: row column row-reverse column-reverse
+    ),
+
+ - final output 
+ - xs 
+ .flex-row{
+     flex-direction : row !important ;
+ }
+ .flex-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+ - sm 
+ .flex-sm-row{
+     flex-direction : row !important ;
+ }
+ .flex-sm-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+
+
+ - md 
+ .flex-md-row{
+     flex-direction : row !important ;
+ }
+ .flex-md-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+
+ - lg 
+ .flex-lg-row{
+     flex-direction : row !important ;
+ }
+ .flex-lg-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+
+ - xl 
+ .flex-xl-row{
+     flex-direction : row !important ;
+ }
+ .flex-xl-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+
+
+ - xxl 
+ .flex-xxl-row{
+     flex-direction : row !important ;
+ }
+ .flex-xxl-column{
+     flex-direction : column !important ;
+ }
+
+.
+.
+.
+
+
+
+################ justify-content ###############
+- .justify-content-start
+- .justify-content-end
+- .justify-content-center
+- .justify-content-between
+- .justify-content-around
+- .justify-content-evenly
+- .justify-content-sm-start
+- .justify-content-sm-end
+- .justify-content-sm-center
+- .justify-content-sm-between
+- .justify-content-sm-around
+- .justify-content-sm-evenly
+- .justify-content-md-start
+- .justify-content-md-end
+- .justify-content-md-center
+- .justify-content-md-between
+- .justify-content-md-around
+- .justify-content-md-evenly
+- .justify-content-lg-start
+- .justify-content-lg-end
+- .justify-content-lg-center
+- .justify-content-lg-between
+- .justify-content-lg-around
+- .justify-content-lg-evenly
+- .justify-content-xl-start
+- .justify-content-xl-end
+- .justify-content-xl-center
+- .justify-content-xl-between
+- .justify-content-xl-around
+- .justify-content-xl-evenly
+- .justify-content-xxl-start
+- .justify-content-xxl-end
+- .justify-content-xxl-center
+- .justify-content-xxl-between
+- .justify-content-xxl-around
+- .justify-content-xxl-evenly
+
+- from _utilities.scss =>
+
+"justify-content": (
+    responsive: true,
+    property: justify-content,
+    values: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+    )
+)
+
+-xs
+
+.justify-content-start{
+    justify-content : flex-start !important;
+}
+.justify-content-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+
+-sm
+
+.justify-content-sm-start{
+    justify-content : flex-start !important;
+}
+.justify-content-sm-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+
+-md
+
+.justify-content-md-start{
+    justify-content : flex-start !important;
+}
+.justify-content-md-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+
+-lg
+
+.justify-content-lg-start{
+    justify-content : flex-start !important;
+}
+.justify-content-lg-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+
+-xl
+
+.justify-content-xl-start{
+    justify-content : flex-start !important;
+}
+.justify-content-xl-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+
+-xxl
+
+.justify-content-xxl-start{
+    justify-content : flex-start !important;
+}
+.justify-content-xxl-between{
+    justify-content : space-between !important;
+}
+.
+.
+.
+.
+
+
+############## align items ###########
+
+- .align-items-start
+- .align-items-end
+- .align-items-center
+- .align-items-baseline
+- .align-items-stretch
+- .align-items-sm-start
+- .align-items-sm-end
+- .align-items-sm-center
+- .align-items-sm-baseline
+- .align-items-sm-stretch
+- .align-items-md-start
+- .align-items-md-end
+- .align-items-md-center
+- .align-items-md-baseline
+- .align-items-md-stretch
+- .align-items-lg-start
+- .align-items-lg-end
+- .align-items-lg-center
+- .align-items-lg-baseline
+- .align-items-lg-stretch
+- .align-items-xl-start
+- .align-items-xl-end
+- .align-items-xl-center
+- .align-items-xl-baseline
+- .align-items-xl-stretch
+- .align-items-xxl-start
+- .align-items-xxl-end
+- .align-items-xxl-center
+- .align-items-xxl-baseline
+- .align-items-xxl-stretch
+
+
+- from _utilities.scss => 
+
+    "align-items": (
+      responsive: true,
+      property: align-items,
+      values: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+      )
+    ),
+
+-xs 
+
+.align-items-start{
+    align-items : flex-start !important ;
+}
+.align-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+
+-sm 
+
+.align-sm-items-start{
+    align-items : flex-start !important ;
+}
+.align-sm-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+-md 
+
+.align-md-items-start{
+    align-items : flex-start !important ;
+}
+.align-md-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+
+-lg 
+
+.align-lg-items-start{
+    align-items : flex-start !important ;
+}
+.align-lg-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+
+-xl 
+
+.align-xl-items-start{
+    align-items : flex-start !important ;
+}
+.align-xl-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+
+-xxl 
+
+.align-xxl-items-start{
+    align-items : flex-start !important ;
+}
+.align-xxl-items-end{
+    align-items : flex-end !important ;
+}
+
+.
+.
+.
+
+
+#########   Align self  ###########
+
+- .align-self-start
+- .align-self-end
+- .align-self-center
+- .align-self-baseline
+- .align-self-stretch
+- .align-self-sm-start
+- .align-self-sm-end
+- .align-self-sm-center
+- .align-self-sm-baseline
+- .align-self-sm-stretch
+- .align-self-md-start
+- .align-self-md-end
+- .align-self-md-center
+- .align-self-md-baseline
+- .align-self-md-stretch
+- .align-self-lg-start
+- .align-self-lg-end
+- .align-self-lg-center
+- .align-self-lg-baseline
+- .align-self-lg-stretch
+- .align-self-xl-start
+- .align-self-xl-end
+- .align-self-xl-center
+- .align-self-xl-baseline
+- .align-self-xl-stretch
+- .align-self-xxl-start
+- .align-self-xxl-end
+- .align-self-xxl-center
+- .align-self-xxl-baseline
+- .align-self-xxl-stretch
+
+- from _utilities.scss =>
+    "align-self": (
+      responsive: true,
+      property: align-self,
+      values: (
+        auto: auto,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+      )
+    )
+
+align-self : auto => is default value and Computes to the parent's align-items value
+
+-xs 
+
+.align-self-start{
+    align-self:flex-start !important ;
+}
+.align-self-center{
+    align-self:center !important ;
+}
+
+.
+.
+.
+.
+
+
+-sm 
+
+.align-self-sm-start{
+    align-self:flex-start !important ;
+}
+.align-self-sm-center{
+    align-self:center !important ;
+}
+
+.
+.
+.
+.
+
+-md 
+
+.align-self-md-start{
+    align-self:flex-start !important ;
+}
+.align-self-md-center{
+    align-self:center !important ;
+}
+
+.
+.
+.
+.
+
+
+-lg 
+
+.align-self-lg-start{
+    align-self:flex-start !important ;
+}
+.align-self-lg-center{
+    align-self:center !important ;
+}
+
+.
+.
+.
+.
+
+
+-xl 
+
+.align-self-xl-start{
+    align-self:flex-start !important ;
+}
+.align-self-xl-center{
+    align-self:center !important ;
+}
+
+.
+.
+.
+.
+
+
+-xxl 
+
+.align-self-xxl-start{
+    align-self:flex-start !important ;
+}
+.align-self-xxl-center{
+    align-self:center !important ;
+}
+
+.
+.
+############## Fill  ##########
+- flex : 1 1 auto => flex-grow : 1 ,  flex-shrink : 1 , flex-basis:auto 
+- from _utilities.scss => 
+
+"flex": (
+    responsive: true,
+    property: flex,
+    values: (fill: 1 1 auto)
+)
+
+-xs
+
+.flex-fill{
+    flex:1 1 auto !important ;
+}
+
+
+-sm
+
+.flex-sm-fill{
+    flex:1 1 auto !important ;
+}
+
+
+-lg
+
+.flex-lg-fill{
+    flex:1 1 auto !important ;
+}
+
+
+-xl
+
+.flex-xl-fill{
+    flex:1 1 auto !important ;
+}
+
+
+-xxl
+
+.flex-xxl-fill{
+    flex:1 1 auto !important ;
+}
+
+
+
+#############  Flex Grow  #############
+- .flex-grow-0  , .flex-grow-1  , .flex-{breakpoint}-grow-0 , .flex-{breakpoint}-grow-1
+- default value is flex-grow : 0;
+- from _utilities.scss =>
+  "flex-grow": (
+      responsive: true,
+      property: flex-grow,
+      class: flex,
+      values: (
+        grow-0: 0,
+        grow-1: 1,
+      )
+    )
+
+- final output : 
+
+
+-xs
+.flex-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-grow-1{
+    flex-grow: 1 !important;
+}
+
+
+-sm
+.flex-sm-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-sm-grow-1{
+    flex-grow: 1 !important;
+}
+
+-md
+.flex-md-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-md-grow-1{
+    flex-grow: 1 !important;
+}
+
+
+-lg
+.flex-lg-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-lg-grow-1{
+    flex-grow: 1 !important;
+}
+
+
+-xl
+.flex-xl-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-xl-grow-1{
+    flex-grow: 1 !important;
+}
+
+
+-xxl
+.flex-xxl-grow-0{
+    flex-grow: 0 !important;
+}
+.flex-xxl-grow-1{
+    flex-grow: 1 !important;
+}
+
+###########  Flex Shrink ##############
+- default value of flex shrink is flex-shrink:1
+- from _utilities.scss =>
+"flex-shrink": (
+    responsive: true,
+    property: flex-shrink,
+    class: flex,
+    values: (
+    shrink-0: 0,
+    shrink-1: 1,
+    )
+)
+- final output : 
+
+-xs 
+
+.flex-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+
+-sm
+
+.flex-sm-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-sm-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+-md
+
+.flex-md-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-md-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+
+-lg
+
+.flex-lg-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-lg-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+-xl
+
+.flex-xl-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-xl-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+
+-xxl
+
+.flex-xxl-shrink-0{
+    flex-shrink : 0 !important ;
+}
+.flex-xxl-shrink-1{
+    flex-shrink : 1 !important ;
+}
+
+################  Wrap ####################
+- .flex-nowrap
+- .flex-wrap
+- .flex-wrap-reverse
+- .flex-sm-nowrap
+- .flex-sm-wrap
+- .flex-sm-wrap-reverse
+- .flex-md-nowrap
+- .flex-md-wrap
+- .flex-md-wrap-reverse
+- .flex-lg-nowrap
+- .flex-lg-wrap
+- .flex-lg-wrap-reverse
+- .flex-xl-nowrap
+- .flex-xl-wrap
+- .flex-xl-wrap-reverse
+- .flex-xxl-nowrap
+- .flex-xxl-wrap
+- .flex-xxl-wrap-reverse
+
+- used for flex container
+- default value is flex-wrap:nowrap 
+- from _utilities.scss =>
+
+"flex-wrap": (
+    responsive: true,
+    property: flex-wrap,
+    class: flex,
+    values: wrap nowrap wrap-reverse
+)
+
+-final output 
+
+- xs 
+
+.flex-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+
+- sm
+
+.flex-sm-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-sm-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-sm-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+
+
+- md
+
+.flex-md-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-md-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-md-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+- lg
+
+.flex-lg-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-lg-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-lg-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+
+- xl
+
+.flex-xl-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-xl-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-xl-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+- xxl
+
+.flex-xxl-wrap{
+    flex-wrap : wrap !important ;
+}
+.flex-xxl-nowrap{
+    flex-wrap : nowrap !important ;
+}
+.flex-xxl-wrap-reverse{
+    flex-wrap : wrap-reverse !important ;
+}
+
+
+##############   Order      #################
+- .order-0
+- .order-1
+- .order-2
+- .order-3
+- .order-4
+- .order-5
+- .order-sm-0
+- .order-sm-1
+- .order-sm-2
+- .order-sm-3
+- .order-sm-4
+- .order-sm-5
+- .order-md-0
+- .order-md-1
+- .order-md-2
+- .order-md-3
+- .order-md-4
+- .order-md-5
+- .order-lg-0
+- .order-lg-1
+- .order-lg-2
+- .order-lg-3
+- .order-lg-4
+- .order-lg-5
+- .order-xl-0
+- .order-xl-1
+- .order-xl-2
+- .order-xl-3
+- .order-xl-4
+- .order-xl-5
+- .order-xxl-0
+- .order-xxl-1
+- .order-xxl-2
+- .order-xxl-3
+- .order-xxl-4
+- .order-xxl-5
+- .order-first
+- .order-last
+- .order-sm-first
+- .order-sm-last
+- .order-md-first
+- .order-md-last
+- .order-lg-first
+- .order-lg-last
+- .order-xl-first
+- .order-xl-last
+- .order-xxl-first
+- .order-xxl-last
+
+
+- used for flex items 
+- default valu of order for html element is order:0 
+- if two elements have same value of order in this  case  we can show his default flow in document 
+- from _utilities.scss =>
+"order": (
+    responsive: true,
+    property: order,
+    values: (
+    first: -1,
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    last: 6,
+    ),
+)
+
+- final output :
+-xs :
+
+.order-first{
+    order : -1 !important ;
+}
+.order-0{
+    order : 0 !important ;
+}
+.order-1{
+    order : 1 !important ;
+}
+.order-2{
+    order : 2 !important ;
+}
+.order-3{
+    order : 3 !important ;
+}
+.order-4{
+    order : 4 !important ;
+}
+.order-5{
+    order : 5 !important ;
+}
+.order-last{
+    order : 6 !important ;
+}
+ -sm 
+ .
+ .
+ .
+ -md 
+ .
+ .
+ .
+ -lg
+ .
+ .
+ .
+ -xl
+ .
+ .
+ .
+ -xxl
+ .
+ .
+ .
+
+
+ ##############  Align content  #######
+ - used o fmex container 
+ - default value is align-content:stretch
+ - align flex-lines :  lines (flex direction row) or columns (flex direction column) along cross-axis :
+     y-axis (flex direction row) and x-axis (flex direction column)
+
+
+
+- .align-content-start
+- .align-content-end
+- .align-content-center
+- .align-content-around
+- .align-content-stretch
+- .align-content-sm-start
+- .align-content-sm-end
+- .align-content-sm-center
+- .align-content-sm-around
+- .align-content-sm-stretch
+- .align-content-md-start
+- .align-content-md-end
+- .align-content-md-center
+- .align-content-md-around
+- .align-content-md-stretch
+- .align-content-lg-start
+- .align-content-lg-end
+- .align-content-lg-center
+- .align-content-lg-around
+- .align-content-lg-stretch
+- .align-content-xl-start
+- .align-content-xl-end
+- .align-content-xl-center
+- .align-content-xl-around
+- .align-content-xl-stretch
+- .align-content-xxl-start
+- .align-content-xxl-end
+- .align-content-xxl-center
+- .align-content-xxl-around
+- .align-content-xxl-stretch
+
+- from _utilities.scss =>
+
+"align-content": (
+    responsive: true,
+    property: align-content,
+    values: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    stretch: stretch,
+    )
+)
+- final output 
+
+- xs
+.align-content-start{
+    align-content :flex-start !important ; 
+}
+.align-content-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+- sm
+.align-content-sm-start{
+    align-content :flex-start !important ; 
+}
+.align-content-sm-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+- md
+.align-content-md-start{
+    align-content :flex-start !important ; 
+}
+.align-content-md-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+- lg
+.align-content-lg-start{
+    align-content :flex-start !important ; 
+}
+.align-content-lg-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+
+- xl
+.align-content-xl-start{
+    align-content :flex-start !important ; 
+}
+.align-content-xl-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+
+- xxl
+.align-content-xxl-start{
+    align-content :flex-start !important ; 
+}
+.align-content-xxl-between{
+    align-content :space-between !important ; 
+}
+.
+.
+.
+
+
+##############   Gap  #############
+- used on flex container
+- default value is gap : 0
+- from _utilities.scss =>
+"gap": (
+    responsive: true,
+    property: gap,
+    class: gap,
+    values: $spacers
+),
+- from _variabales.scss =>
+
+- $spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+
+- final output : 
+
+-xs 
+.gap-0{
+    gap: 0 !important ;
+}
+.gap-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+-sm 
+.gap-sm-0{
+    gap: 0 !important ;
+}
+.gap-sm-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+
+-md 
+.gap-md-0{
+    gap: 0 !important ;
+}
+.gap-md-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+
+-lg 
+.gap-lg-0{
+    gap: 0 !important ;
+}
+.gap-lg-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+-xl 
+.gap-xl-0{
+    gap: 0 !important ;
+}
+.gap-xl-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+-xxl 
+.gap-xxl-0{
+    gap: 0 !important ;
+}
+.gap-xxl-1{
+    gap: 0.25rem !important ;
+}
+.
+.
+.
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

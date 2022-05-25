@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// default value of border radius => 0.25rem 0.25rem 0.25rem 0.25rem
+.default-border-radius {
+	@include border-radius();
+}
+.border-radius {
+	@include border-radius(0.5rem);
+}
+// default value of border top radius => 0.25rem 0.25rem  0 0
+.default-border-top-radius {
+	@include border-top-radius();
+}
+.border-top-radius {
+	@include border-top-radius(0.5rem);
+}
+// default value of border top radius => 0  0.25rem 0.25rem  0
+.default-border-end-radius {
+	@include border-end-radius();
+}
+.border-end-radius {
+	@include border-end-radius(0.5rem);
+}

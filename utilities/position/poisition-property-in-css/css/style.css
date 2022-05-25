@@ -1,0 +1,158 @@
+h4 {
+	color: red;
+}
+.position-static-one {
+	padding: 1rem;
+	border: 1px solid red;
+	position: static;
+	top: 1rem;
+	left: 1rem;
+	z-index: 2;
+}
+.position-static-two {
+	padding: 1rem;
+	border: 1px solid green;
+	position: static;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 1;
+}
+
+.position-relative-one {
+	width: 50%;
+	margin: auto;
+	padding: 0.5rem;
+	background-color: #ff9800;
+	position: relative;
+	top: 6rem;
+	left: 6rem;
+}
+.position-relative-two {
+	padding: 1rem;
+	background-color: blue;
+	color: white;
+	position: relative;
+}
+.position-relative-three {
+	padding: 1rem;
+	background-color: purple;
+	color: white;
+}
+
+.ancestor-one {
+	width: 80%;
+	height: 600px;
+	border: 1px solid red;
+	/* position: relative; */
+}
+.ancestor-two {
+	width: 20%;
+	margin: auto;
+	height: 200px;
+	border: 1px solid green;
+	position: relative;
+}
+.child {
+	background-color: maroon;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin: 0;
+	padding: 1rem;
+	left: 2rem;
+	top: 2rem;
+}
+.ancestor-three {
+	width: 80%;
+	height: 600px;
+	border: 1px solid #795548;
+}
+.ancestor-four {
+	width: 20%;
+	margin: auto;
+	height: 200px;
+	border: 1px solid blue;
+}
+.child-two {
+	background-color: violet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 1rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+.test-one {
+	border: 1px solid lawngreen;
+	transform: translateX(2rem);
+}
+
+.position-fixed-one {
+	width: 80%;
+	height: 600px;
+	border: 1px solid #00aaff;
+}
+.child-three {
+	background-color: rgb(250, 193, 119);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 1rem;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.position-fixed-two {
+	width: 80%;
+	height: 600px;
+	border: 1px solid #ff0099;
+}
+.child-four {
+	background-color: rgb(0, 255, 51);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.test-two {
+	border: 1px solid cyan;
+	filter: contrast(100%);
+}
+h3 {
+	height: 80px;
+	margin: 0;
+}
+nav {
+	background-color: blue;
+	color: white;
+	padding: 1rem;
+	margin: 0 auto;
+	position: sticky;
+	top: 1rem;
+}
+
+h2 {
+	background-color: green;
+	color: red;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+}

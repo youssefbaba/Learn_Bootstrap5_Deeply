@@ -1,0 +1,181 @@
+############ responsive display utility classes ######
+- the classes are named using the format :
+    - .d-{value}    for sx 
+    - .d-{breakpoint}-{value} for sm , md , lg , xl ,xxl breakpoints
+
+- where value is one of : 
+    - none
+    - block
+    - inline-block
+    - inline
+    - flex
+    - inline-flex
+    - grid
+    - table
+    - table-cell
+    - table-row
+
+############### how to generate display utilities ########
+- form _utilities.scss =>
+    "display": (
+      responsive: true,
+      print: true,
+      property: display,
+      class: d,
+      values: inline inline-block block grid table table-row table-cell flex inline-flex none
+    )
+- final output :
+- xs :
+.d-inline{
+    display : inline !important ;
+}
+.d-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+
+- sm
+.d-sm-inline{
+    display : inline !important ;
+}
+.d-sm-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+
+- md
+.d-md-inline{
+    display : inline !important ;
+}
+.d-md-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+- lg
+.d-lg-inline{
+    display : inline !important ;
+}
+.d-lg-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+
+- xl
+.d-xl-inline{
+    display : inline !important ;
+}
+.d-xl-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+- xxl
+.d-xxl-inline{
+    display : inline !important ;
+}
+.d-xxl-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+-print 
+- di
+.d-print-inline{
+    display : inline !important ;
+}
+.d-print-inline-block{
+    display : inliinline-blockne !important ;
+}
+.
+.
+.
+
+
+- .d-none .d-md-block .d-xl-none 
+xs --> sm : display none 
+md  ----> lg : display block 
+xl ----> xxl : display none
+
+- .d-none
+from xs  to  xxl  : display none 
+
+- .d-none .d-sm-block
+in xs : display none 
+from sm  to xxl : display block
+
+- .d-sm-none .d-md-block
+before sm means xs  : display block 
+in sm : display none 
+from md to xxl : display block
+
+- .d-md-none .d-lg-block
+before md means sm and xs  : display block
+in md : display none 
+form lg to xxl : display block
+
+- .d-lg-none .d-xl-block
+before lg means md and sm and xs : display block
+in lg : display none 
+from xl to xxl : display block
+
+- .d-xl-none .d-xxl-block
+before xl means lg and md and sm and xs : display block
+in xl : display none 
+in xxl : display block
+
+- .d-xxl-none
+before xxl means xl and lg and md and sm and xs : display block
+in xxl : display none
+
+- .d-block
+from xs to xxl : display none
+
+- .d-block .d-sm-none
+in xs : display block 
+from sm to xxl : display none
+
+- .d-none .d-sm-block .d-md-none
+in xs : display none
+in sm : display block
+from md to xxl : display none
+
+- .d-none .d-md-block .d-lg-none
+from xs to md  : display none
+in md : display block
+from lg to xxl : display none
+
+- .d-none .d-lg-block .d-xl-none
+from xs to lg  : display none
+in lg : display block
+from xl to xxl : display none
+
+- .d-none .d-xl-block .d-xxl-none
+from xs to xl  : display none
+in xl : display block
+in xxl : display none
+
+- .d-none .d-xxl-block
+from xs to xl  : display none
+in xxl : display block
+
+
+
+
+
+

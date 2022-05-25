@@ -1,0 +1,279 @@
+- borders : Use border utilities to add or remove an element’s borders
+#########  How to generate border #############
+- in _utilities.scss
+
+"border": (
+    property: border,
+    values: (
+    null: $border-width solid $border-color,
+    0: 0,
+    )
+)
+
+- output : 
+.border{
+    border : 1px solid #dee2e6  !important;
+}
+.border-0{
+    border : 0  !important;
+}
+
+
+
+
+"border-top": (
+    property: border-top,
+    values: (
+    null: $border-width solid $border-color,
+    0: 0,
+    )
+)
+
+- output : 
+.border-top{
+    border-top : 1px solid #dee2e6  !important;
+}
+.border-top-0{
+    border-top : 0  !important;
+}
+
+
+
+"border-end": (
+    property: border-right,
+    class: border-end,
+    values: (
+    null: $border-width solid $border-color,
+    0: 0,
+    )
+)
+
+- output : 
+.border-end{
+    border-right : 1px solid #dee2e6  !important;
+}
+.border-end-0{
+    border-right : 0  !important;
+}
+
+
+
+"border-bottom": (
+    property: border-bottom,
+    values: (
+    null: $border-width solid $border-color,
+    0: 0,
+    )
+)
+
+- output : 
+.border-bottom{
+    border-bottom : 1px solid #dee2e6  !important;
+}
+.border-bottom-0{
+    border-bottom : 0  !important;
+}
+
+
+
+"border-start": (
+    property: border-left,
+    class: border-start,
+    values: (
+    null: $border-width solid $border-color,
+    0: 0,
+    )
+)
+
+
+- output : 
+.border-start{
+    border-left : 1px solid #dee2e6  !important;
+}
+.border-start-0{
+    border-left : 0  !important;
+}
+
+
+"border-color": (
+    property: border-color,
+    class: border,
+    values: map-merge($theme-colors, ("white": $white))
+)
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+
+- output : 
+.border-primary{
+    border-color : $primary;
+}
+.border-secondary{
+    border-color : $secondary;
+}
+.border-success{
+    border-color : $success;
+}
+.border-info{
+    border-color : $info;
+}
+.border-warning{
+    border-color : $warning;
+}
+.border-danger{
+    border-color : $danger;
+}
+.border-light{
+    border-color : $light;
+}
+.border-dark{
+    border-color : $dark;
+}
+.border-white{
+    border-color : $white;
+}
+
+
+
+"border-width": (
+    property: border-width,
+    class: border,
+    values: $border-widths
+)
+
+
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+
+- output : 
+.border-1{
+    border-width :1px ;    
+}
+.border-2{
+    border-width :2px ;    
+}
+.border-3{
+    border-width :3px ;    
+}
+.border-4{
+    border-width :4px ;    
+}
+.border-5{
+    border-width :5px ;    
+}
+
+
+#############  how to generate  border radius (rounded)  #############
+
+"rounded": (
+    property: border-radius,
+    class: rounded,
+    values: (
+    null: $border-radius,
+    0: 0,
+    1: $border-radius-sm,
+    2: $border-radius,
+    3: $border-radius-lg,
+    circle: 50%,
+    pill: $border-radius-pill
+    )
+)
+ - output : 
+ .rounded {
+    border-radius: 0.25rem !important ;
+ }
+ .rounded-0 {
+    border-radius: 0.25rem !important ;
+ }
+ .rounded-1 {
+    border-radius: 0.2rem !important ;
+ }
+ .rounded-2 {
+    border-radius: 0.25rem !important ;
+ }
+ .rounded-3 {
+    border-radius: 0.3rem !important ;
+ }
+ .rounded-circle {
+    border-radius: 50% !important ;
+ }
+ .rounded-pill {
+    border-radius: 50rem !important ;
+ }
+
+
+"rounded-top": (
+    property: border-top-left-radius border-top-right-radius,
+    class: rounded-top,
+    values: (null: $border-radius)
+)
+
+
+- output : 
+.rounded-top{
+    border-top-left-radius :0.25rem !important
+    border-top-right-radius :0.25rem !important
+}
+
+
+"rounded-end": (
+    property: border-top-right-radius border-bottom-right-radius,
+    class: rounded-end,
+    values: (null: $border-radius)
+)
+
+
+- output : 
+.rounded-end{
+    border-top-right-radius :0.25rem !important
+    border-bottom-right-radius :0.25rem !important
+}
+
+
+"rounded-bottom": (
+    property: border-bottom-right-radius border-bottom-left-radius,
+    class: rounded-bottom,
+    values: (null: $border-radius)
+)
+
+
+- output : 
+.rounded-bottom{
+    border-bottom-right-radius :0.25rem !important
+    border-bottom-left-radius :0.25rem !important
+}
+
+
+"rounded-start": (
+    property: border-bottom-left-radius border-top-left-radius,
+    class: rounded-start,
+    values: (null: $border-radius)
+)
+
+
+
+- output : 
+.rounded-bottom{
+    border-bottom-left-radius :0.25rem !important
+    border-top-left-radius :0.25rem !important
+}
+
+
+
+
+

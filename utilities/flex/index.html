@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Flex</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Styling to better show these examples -->
+		<style type="text/css">
+			[class*="align-items-"],
+			[data-example="alignSelf"],
+			[class*="align-content-"] {
+				height: 300px;
+			}
+			.responsive-examples {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="component display-4 text-primary">Flex</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Container
+							</h3>
+							<div class="code-live">
+								<h4 class="text-success">Flexbox container</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 1
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 2
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 3
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 4
+									</div>
+								</div>
+								<h4 class="text-success">
+									Inline flexbox container
+								</h4>
+								<div class="d-inline-flex bg-info p-3">
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 1
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 2
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 3
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Item 4
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Direction
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Row</h4>
+								<!-- flex-row is default of flex direction  -->
+								<div class="d-flex flex-row bg-info p-3">
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Row-reverse</h4>
+								<div
+									class="d-flex flex-row-reverse p-3 bg-info"
+								>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row-reverse
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row-reverse
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row-reverse
+									</div>
+									<div
+										class="p-2 bg-warning border border-dark"
+									>
+										Flex direction row-reverse
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Column</h4>
+								<div
+									class="d-flex flex-column p-3 bg-info"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">
+									Column-reverse
+								</h4>
+								<div
+									class="d-flex flex-column-reverse p-3 bg-info"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column-reverse 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column-reverse 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column-reverse 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex direction column-reverse 4
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Justify content ( Flex Direction Row )
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex justify-content-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex justify-content-center bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									class="d-flex justify-content-end bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Between</h4>
+								<div
+									class="d-flex justify-content-between bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Around</h4>
+								<div
+									class="d-flex justify-content-around bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Evenly</h4>
+								<div
+									class="d-flex justify-content-evenly bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 4
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Justify content ( Flex Direction Column )
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex flex-column justify-content-start bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content start 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex flex-column justify-content-center bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content center 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									class="d-flex flex-column justify-content-end bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content end 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Between</h4>
+								<div
+									class="d-flex flex-column justify-content-between bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content between 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Around</h4>
+								<div
+									class="d-flex flex-column justify-content-around bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content around 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Evenly</h4>
+								<div
+									class="d-flex flex-column justify-content-evenly bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Justify content Evenly 4
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Align items ( Flex Direction Row)
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex align-items-center bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div class="d-flex align-items-end bg-info p-3">
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Baseline</h4>
+								<div
+									class="d-flex align-items-baseline bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items baseline 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items baseline 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+										style="font-size: 2rem"
+									>
+										Align items baseline 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items baseline 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Stretch</h4>
+								<div
+									class="d-flex align-items-stretch bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 4
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Align items ( Flex Direction column )
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex flex-column align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items start 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex flex-column align-items-center bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items center 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									class="d-flex flex-column align-items-end bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items end 4
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Stretch</h4>
+								<div
+									class="d-flex flex-column align-items-stretch bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 1
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 2
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 3
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Align items stretch 4
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Align self (Flex Direction Row)
+							</h3>
+							<!-- 
+                                - default value : align-self:auto;
+                                - default value of align self equal auto that means herites align items of your element parent 
+                            -->
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									data-example="alignSelf"
+									class="d-flex align-items-center bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-start"
+									>
+										Align self start
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									data-example="alignSelf"
+									class="d-flex align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-center"
+									>
+										Align self center
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									data-example="alignSelf"
+									class="d-flex align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-end"
+									>
+										Align self end
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Baseline</h4>
+								<div
+									data-example="alignSelf"
+									class="d-flex align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-baseline"
+									>
+										Align self baseline
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-baseline"
+										style="font-size: 2rem"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Stretch</h4>
+								<div
+									data-example="alignSelf"
+									class="d-flex flex-row align-items-start bg-info p-3"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-stretch"
+									>
+										Align self stretch
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Auto</h4>
+								<!--  auto means to herite the value  of align items of his parent  -->
+								<div
+									data-example="alignSelf"
+									class="d-flex align-items-end bg-info p-2"
+								>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark align-self-auto"
+									>
+										Align self Auto
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Fill
+							</h3>
+							<div class="code-live">
+								<h4 class="text-success">Default</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item with a lot of content
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<h4 class="text-success">With Fill</h4>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item with a lot of content
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item with a lot of content
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex item
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item with a lot of content
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark flex-fill"
+									>
+										Flex item
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Grow
+							</h3>
+							<div class="code-live">
+								<h4 class="text-success">Default</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Third Item Flex grow
+									</div>
+								</div>
+							</div>
+							<div class="code-live mt-3">
+								<h4 class="text-success">With Flex Grow</h4>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning p-2 border border-dark flex-grow-1"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Third Item Flex grow
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning p-2 border border-dark flex-grow-1"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark"
+									>
+										Flex grow
+									</div>
+									<div
+										class="bg-warning p-2 border border-dark flex-grow-1"
+									>
+										Third Item Flex grow
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Shrink
+							</h3>
+							<div class="code-live">
+								<h4 class="text-success">Default</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-1"
+									>
+										Flex shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-1"
+									>
+										Flex shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-1"
+									>
+										Flex shrink
+									</div>
+								</div>
+							</div>
+							<div class="code-live">
+								<h4 class="text-success">With Shrink</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Not Shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex shrink
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning border border-dark p-2 w-100"
+									>
+										Flex shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-1"
+									>
+										Flex shrink
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning border border-dark p-2 w-100"
+									>
+										Flex shrink
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex shrink
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Auto margins
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-success mt-3">
+									Horizontal (Flex Direction Row)
+								</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning border border-dark p-2 me-auto"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item
+									</div>
+								</div>
+								<div class="d-flex bg-info p-3 mt-3">
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 ms-auto"
+									>
+										Flex Item
+									</div>
+								</div>
+								<h4 class="h5 text-success mt-3">
+									Vertical (Flex Direction Column )
+								</h4>
+								<div
+									class="d-flex flex-column align-items-start bg-info p-3 mt-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item
+									</div>
+								</div>
+								<div
+									class="d-flex flex-column align-items-start bg-info p-3 mt-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 mb-auto"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item
+									</div>
+								</div>
+								<div
+									class="d-flex flex-column align-items-end bg-info p-3 mt-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item
+									</div>
+								</div>
+								<div
+									class="d-flex flex-column align-items-end bg-info p-3 mt-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex item
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 mt-auto"
+									>
+										Flex Item
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Wrap (Flex Direction Row)
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Nowrap</h4>
+								<div
+									class="d-flex flex-nowrap align-items-start bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Wrap</h4>
+								<div
+									class="d-flex flex-wrap align-items-start align-content-start bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+
+								<h4 class="h5 text-danger mt-3">
+									Wrap-reverse
+								</h4>
+								<div
+									class="d-flex flex-wrap-reverse align-items-start align-content-start bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+							</div>
+							<br />
+							<h3 class="component-variation text-primary">
+								Wrap (Flex Direction Column )
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Wrap</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-start bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">
+									Wrap-reverse
+								</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap-reverse align-content-start bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Order
+							</h3>
+							<p class="text-success">
+								order-first (-1), order-0 to order-5 and
+								order-last (6)
+							</p>
+							<div class="code-live">
+								<div class="d-flex flex-wrap bg-info p-3">
+									<div
+										class="bg-warning border border-dark p-2 order-first flex-shrink-0"
+									>
+										First, Flex Item => 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-5 flex-shrink-0"
+									>
+										Second, Flex Item => 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-4 flex-shrink-0"
+									>
+										Third, Flex Item => 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Fourth, Flex Item => 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Fifth, Flex Item => 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-3 flex-shrink-0"
+									>
+										Sixth, Flex Item => 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-first flex-shrink-0"
+									>
+										Seventh, Flex Item => 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-1 flex-shrink-0"
+									>
+										Eighth, Flex Item => 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-last flex-shrink-0"
+									>
+										Ninth, Flex Item => 10
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 order-1 flex-shrink-0"
+									>
+										Tenth, Flex Item => 6
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Align content ( flex direction row)
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-center bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-end bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Between</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-between bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Around</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-around bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Stretch</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-stretch bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+							</div>
+							<h3 class="component-variation text-primary">
+								Align content ( flex direction column)
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Start</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-start bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Center</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-center bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">End</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-end bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Between</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-between bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Around</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-around bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="h5 text-danger mt-3">Stretch</h4>
+								<div
+									class="d-flex flex-column align-items-start flex-wrap align-content-stretch bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Media Object
+							</h3>
+							<div class="code-live">
+								<div class="d-flex">
+									<div class="flex-shrink-0">
+										<img
+											src="https://via.placeholder.com/150x150/6C757D/FFF?Text=Youssef+Baba "
+											alt="image"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h4>Lorem ipsum dolor</h4>
+										<p class="m-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Voluptates laborum deleniti tenetur
+											maxime veritatis dolores natus ut
+											fugit ea nesciunt quidem aperiam
+											accusantium, commodi iusto porro
+											provident similique harum quaerat,
+											deserunt earum unde? Ab, eius. Fugit
+											minus aperiam aliquid repellendus.
+										</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center mt-3">
+									<div class="flex-shrink-0">
+										<img
+											src="https://via.placeholder.com/150x150/6C757D/FFF?Text=Youssef+Baba "
+											alt="image"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h4>Lorem ipsum dolor</h4>
+										<p class="m-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit.
+											Voluptates laborum deleniti tenetur
+											maxime veritatis dolores natus ut
+											fugit ea nesciunt quidem aperiam
+											accusantium, commodi iusto porro
+											provident similique harum quaerat,
+											deserunt earum unde? Ab, eius. Fugit
+											minus aperiam aliquid repellendus.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Gap
+							</h3>
+							<div class="code-live">
+								<h4 class="text-danger">0</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-0 bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="text-danger">1</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-1 bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="text-danger">2</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-2 bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="text-danger">3</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-3 bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="text-danger">4</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-4 bg-info p-3"
+									style="height: 200px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+								<h4 class="text-danger">5</h4>
+								<div
+									class="d-flex align-items-start flex-wrap align-content-start gap-5 bg-info p-3"
+									style="height: 300px"
+								>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 4
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 5
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 6
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 7
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 8
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 9
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 flex-shrink-0"
+									>
+										Flex Item 10
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

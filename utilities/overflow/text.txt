@@ -1,0 +1,19 @@
+############## Overflow #########
+- default value is  overflow:visible
+-from _utilities.scss =>
+ "overflow": (
+    property: overflow,
+    values: auto hidden visible scroll,
+)
+.overflow-auto{
+    overflow : auto !important;
+}
+.overflow-hidden{
+    overflow : hidden !important;
+}
+.overflow-visible{
+    overflow : visible !important;
+}
+.overflow-scroll{
+    overflow : scroll !important;
+}

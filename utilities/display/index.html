@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Display</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Display
+						</h2>
+						<hr />
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								None
+							</h3>
+							<div class="code-live">
+								<div class="p-2 bg-secondary text-white d-none">
+									display none
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Inline and block and inline block
+							</h3>
+							<div class="code-live">
+								<br />
+								<div class="p-2 bg-primary text-white d-inline">
+									display inline
+								</div>
+								<div
+									class="p-2 bg-dark text-white d-inline ms-1"
+								>
+									display inline
+								</div>
+								<br />
+								<br />
+								<span class="bg-primary p-2 text-white d-block">
+									display block
+								</span>
+								<span class="bg-dark p-2 text-white d-block">
+									display block
+								</span>
+
+								<br />
+								<div
+									class="bg-primary p-2 text-white d-inline-block"
+								>
+									display inline block
+								</div>
+								<div
+									class="bg-dark p-2 text-white d-inline-block"
+								>
+									display inline block
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Responsive display none (Hiding element)
+							</h3>
+							<div class="code-live border border-primary p-1">
+								<p class="d-none d-md-block d-xl-none">
+									hide the element for all screen sizes except
+									on medium and large devices
+								</p>
+								<p class="d-sm-none">
+									Display none for breakpoints sm and up
+								</p>
+								<p class="d-md-none">
+									Display none for breakpoints md and up
+								</p>
+								<p class="d-lg-none">
+									Display none for breakpoints lg and up
+								</p>
+								<p class="d-xl-none">
+									Display none for breakpoints xl and up
+								</p>
+								<p class="d-xxl-none">
+									Display none for breakpoints xxl and up
+								</p>
+								<p class="d-lg-none">
+									hide on lg and wider screens
+								</p>
+								<p class="d-none d-lg-block">
+									hide on screens smaller than lg
+								</p>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Print
+							</h3>
+							<div class="code-live">
+								<div class="d-print-none mb-1">
+									Screen Only (Hide on print only)
+								</div>
+								<div class="d-none d-print-block mb-1">
+									Print Only (Hide on screen only)
+								</div>
+								<div
+									class="d-none d-lg-block d-print-block mb-1"
+								>
+									Hide up to large on screen, but always show
+									on print
+								</div>
+								<div class="mb-1 d-print-none">
+									Display none for print
+								</div>
+								<div class="mb-1 d-print-inline">
+									Display inline for print
+								</div>
+								<div class="mb-1 d-print-block">
+									Display block for print
+								</div>
+								<div class="mb-1 d-print-inline-block">
+									Display inline-block for print
+								</div>
+								<div class="mb-1 d-print-grid">
+									Display grid for print
+								</div>
+								<div class="mb-1 d-print-table">
+									Display table for print
+								</div>
+								<div class="mb-1 d-print-table-row">
+									Display table-row for print
+								</div>
+								<div class="mb-1 d-print-table-cell">
+									Display table-cell for print
+								</div>
+								<div class="mb-1 d-print-flex">
+									Display flex for print
+								</div>
+								<div class="mb-1 d-print-inline-flex">
+									Display inline-flex for print
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Grid
+							</h3>
+							<div class="code-live">
+								<div class="d-grid">Display grid</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Table
+							</h3>
+							<div class="code-live">
+								<div class="mb-1 d-table">Display table</div>
+								<div class="mb-1 d-table-row">
+									Display table-row
+								</div>
+								<div class="mb-1 d-table-cell">
+									Display table-cell
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Flex
+							</h3>
+							<div class="code-live">
+								<div class="mb-1 d-flex">Display flex</div>
+								<div class="mb-1 d-inline-flex">
+									Display inline-flex
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

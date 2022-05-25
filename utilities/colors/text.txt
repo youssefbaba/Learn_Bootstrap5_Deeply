@@ -1,0 +1,229 @@
+############## how to generate colors utilities ###########
+- from  _utilities.scss => 
+   "color": (
+      property: color,
+      class: text,
+      local-vars: (
+        "text-opacity": 1
+      ),
+      values: map-merge(
+        $utilities-text-colors,
+        (
+          "muted": $text-muted,
+          "black-50": rgba($black, .5), // deprecated
+          "white-50": rgba($white, .5), // deprecated
+          "reset": inherit,
+        )
+      )
+    )
+
+- from _variables.scss =>
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+
+
+$theme-colors-rgb : (
+    "primary": (13, 110, 253),
+    "secondary": (108, 117, 125),
+    "success": (25, 135, 84),
+    "info": (13, 202, 240),
+    "warning": (255, 193, 7),
+    "danger": (220, 53, 69),
+    "light": (248, 249, 250),
+    "dark": (33, 37, 41)
+)
+
+$utilities-colors: $theme-colors-rgb !default;
+
+$utilities-colors :  (
+    "primary": (13, 110, 253),
+    "secondary": (108, 117, 125),
+    "success": (25, 135, 84),
+    "info": (13, 202, 240),
+    "warning": (255, 193, 7),
+    "danger": (220, 53, 69),
+    "light": (248, 249, 250),
+    "dark": (33, 37, 41)
+)
+
+$utilities-text: map-merge(
+  $utilities-colors,
+  (
+    "black": to-rgb($black),
+    "white": to-rgb($white),
+    "body": to-rgb($body-color)
+  )
+) !default;
+
+$utilities-text : (
+    "primary": (13, 110, 253),
+    "secondary": (108, 117, 125),
+    "success": (25, 135, 84),
+    "info": (13, 202, 240),
+    "warning": (255, 193, 7), 
+    "danger": (220, 53, 69),
+    "light": (248, 249, 250),
+    "dark": (33, 37, 41),
+    "black": (0, 0, 0), 
+    "white": (255, 255, 255),
+    "body": (33, 37, 41)
+)
+
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") !default;
+
+$utilities-text-colors: (
+    "primary": rgba(var(--bs-primary-rgb), var(--bs-text-opacity)),
+    "secondary": rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)),
+    "success": rgba(var(--bs-success-rgb), var(--bs-text-opacity)),
+    "info": rgba(var(--bs-info-rgb), var(--bs-text-opacity)), 
+    "warning": rgba(var(--bs-warning-rgb), var(--bs-text-opacity)),
+    "danger": rgba(var(--bs-danger-rgb), var(--bs-text-opacity)), 
+    "light": rgba(var(--bs-light-rgb), var(--bs-text-opacity)), 
+    "dark": rgba(var(--bs-dark-rgb), var(--bs-text-opacity)), 
+    "black": rgba(var(--bs-black-rgb), var(--bs-text-opacity)),
+    "white": rgba(var(--bs-white-rgb), var(--bs-text-opacity)),
+    "body": rgba(var(--bs-body-color-rgb), var(--bs-text-opacity))
+);
+
+values: map-merge(
+        $utilities-text-colors,
+        (
+          "muted": $text-muted,
+          "black-50": rgba($black, .5), // deprecated
+          "white-50": rgba($white, .5), // deprecated
+          "reset": inherit,
+        )
+)
+
+values : (
+    "primary": rgba(var(--bs-primary-rgb), var(--bs-text-opacity)), 
+    "secondary": rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)),
+    "success": rgba(var(--bs-success-rgb), var(--bs-text-opacity)),
+    "info": rgba(var(--bs-info-rgb), var(--bs-text-opacity)),
+    "warning": rgba(var(--bs-warning-rgb), var(--bs-text-opacity)),
+    "danger": rgba(var(--bs-danger-rgb), var(--bs-text-opacity)),
+    "light": rgba(var(--bs-light-rgb), var(--bs-text-opacity)),
+    "dark": rgba(var(--bs-dark-rgb), var(--bs-text-opacity)),
+    "black": rgba(var(--bs-black-rgb), var(--bs-text-opacity)),
+    "white": rgba(var(--bs-white-rgb), var(--bs-text-opacity)),
+    "body": rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)),
+    "muted": #6c757d, 
+    "black-50": rgba(0, 0, 0, 0.5),
+    "white-50": rgba(255, 255, 255, 0.5), 
+    "reset": inherit
+)
+
+
+
+- final-output :
+.text-primary{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-secondary{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-success{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-info{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-warning{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-danger{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-light{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-dark{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-black{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-white{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-body{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-body-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-muted{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-muted-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-black-50{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-black-50-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-white-50{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-white-50-rgb), var(--bs-text-opacity)) !important ;
+}
+.text-reset{
+    --bs-text-opacity: 1 !important ;
+    color : rgba(var(--bs-reset-rgb), var(--bs-text-opacity)) !important ;
+}
+
+############## how to generate text opacity  utilities ###########
+- from _utilities.scss =>
+
+"text-opacity": (
+    css-var: true,
+    class: text-opacity,
+    values: (
+    25: .25,
+    50: .5,
+    75: .75,
+    100: 1
+    )
+),
+- final output : 
+
+.text-opacity-25{
+    --bs-text-opacity : 0.25 !important ;
+}
+.text-opacity-50{
+    --bs-text-opacity : 0.5 !important ;
+}
+.text-opacity-75{
+    --bs-text-opacity : 0.75 !important ;
+}
+.text-opacity-100{
+    --bs-text-opacity : 1 !important ;
+}
+
+####### color utilities #######
+
+- .text-{color}
+    .text-primary , .text-danger , .text-secondary ......
+    
+- .text-opacity-{number}
+    .text-opacity-25 , .text-opacity-50 ,  .text-opacity-75  , .text-opacity-100
+
+
+

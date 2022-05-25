@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Interactions</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Interactions
+						</h2>
+						<hr />
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Text selection
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">None</h4>
+								<div class="user-select-none">
+									Text of element Partent :Lorem ipsum, dolor
+									sit amet consectetur adipisicing elit. Nam
+									numquam laboriosam ea velit reprehenderit
+									quaerat, eligendi vitae odio facilis
+									quibusdam?
+									<p class="mt-1 text-success">
+										Text Of Child : Lorem ipsum dolor sit
+										amet consectetur, adipisicing elit.
+										Facere, esse?
+									</p>
+								</div>
+							</div>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">All</h4>
+								<div class="user-select-all">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. In laoreet pellentesque
+									lorem sed elementum. Suspendisse maximus
+									convallis ex. Etiam eleifend velit leo.
+									<h5>Lorem, ipsum.</h5>
+									<p class="text-success">
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Quisquam, vel.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Quisquam, vel.
+										<span class="text-secondary"
+											>Lorem ipsum dolor sit amet.</span
+										>
+									</p>
+								</div>
+							</div>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Auto</h4>
+								<div class="test-one user-select-auto">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. In laoreet pellentesque
+									lorem sed elementum. Suspendisse maximus
+									convallis ex. Etiam eleifend velit leo.
+								</div>
+								<hr />
+								<div class="user-select-all">
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Quaerat, quas?
+									<p class="m-0">
+										Lorem ipsum dolor sit amet.
+									</p>
+									<p class="user-select-auto text-success">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+								<hr />
+								<div class="user-select-none">
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Quaerat, quas?
+
+									<p class="user-select-auto text-success">
+										Lorem ipsum dolor sit amet.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Pointer events
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">
+									Test Pointer Event
+								</h4>
+								<a
+									href="https://www.google.com/"
+									class="link-danger pe-none"
+									id="link-test-click"
+									>Google</a
+								>
+								<hr />
+								<div class="form-group">
+									<label for="input-test-change"
+										>Enter Some Text</label
+									>
+									<input
+										id="input-test-change"
+										type="text"
+										class="form-control pe-none"
+										value="Hello Youssef"
+									/>
+								</div>
+								<hr />
+								<button
+									class="btn btn-primary"
+									id="button-test-focus"
+								>
+									Submit
+								</button>
+								<div
+									class="parent mt-3 pe-none"
+									id="element-parent"
+								>
+									<div
+										class="child pe-auto"
+										id="element-child"
+									></div>
+								</div>
+							</div>
+
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">None</h4>
+								<p>
+									<a
+										href="https://www.google.com/"
+										tabindex="-1"
+										id="link-two"
+										class="pe-none"
+										>This link</a
+									>
+									can not be clicked.
+								</p>
+								<h4 class="h5 text-danger mt-3">Auto</h4>
+								<p>
+									<a
+										href="https://www.google.com/"
+										class="pe-auto"
+										>This link</a
+									>
+									can be clicked (this is default behavior).
+								</p>
+								<h4 class="h5 text-danger mt-3">
+									None for parent, auto for second child
+								</h4>
+								<p class="pe-none">
+									<a
+										href="https://www.google.com/"
+										aria-disabled="true"
+										tabindex="-1"
+										>This link</a
+									>
+									can not be clicked because the
+									<code>pointer-events</code>
+									property is inherited from its parent.
+									However,<a
+										href="https://www.google.com/"
+										class="pe-auto"
+										>this link</a
+									>has a <code>pe-auto</code>
+									class and can be clicked.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

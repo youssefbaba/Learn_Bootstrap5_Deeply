@@ -1,89 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Background</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utilities: Background</title>
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Background
+						</h2>
+						<hr />
 
-<body>
-    <main>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-12 col-lg-9">
-                    <h2 class="component display-4 text-primary">Background</h2>
-                    <hr>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Background color
+							</h3>
+							<div class="code-live">
+								<p class="bg-primary text-white p-3">
+									.bg-primary
+								</p>
+								<p class="bg-secondary text-white p-3">
+									.bg-secondary
+								</p>
+								<p class="bg-success text-white p-3">
+									.bg-success
+								</p>
+								<p class="bg-danger text-white p-3">
+									.bg-danger
+								</p>
+								<p class="bg-warning p-3">.bg-warning</p>
+								<p class="bg-info p-3">.bg-info</p>
+								<p class="bg-light p-3">.bg-light</p>
+								<p class="bg-dark text-white p-3">.bg-dark</p>
+								<p class="bg-body p-3">.bg-body</p>
+								<p class="bg-white p-3">.bg-white</p>
+								<p class="bg-transparent p-3">
+									.bg-transparent
+								</p>
+							</div>
+						</div>
 
-                    <div class="code-example mb-5">
-                        <h3 class="component-variation text-danger">Background color</h3>
-                        <div class="code-live">
-                            <p class="bg-primary text-white p-3">.bg-primary</p>
-                            <p class="bg-secondary text-white p-3">.bg-secondary</p>
-                            <p class="bg-success text-white p-3">.bg-success</p>
-                            <p class="bg-danger text-white p-3">.bg-danger</p>
-                            <p class="bg-warning p-3">.bg-warning</p>
-                            <p class="bg-info p-3">.bg-info</p>
-                            <p class="bg-light p-3">.bg-light</p>
-                            <p class="bg-dark text-white p-3">.bg-dark</p>
-                            <p class="bg-body p-3">.bg-body</p>
-                            <p class="bg-white p-3">.bg-white</p>
-                            <p class="bg-transparent p-3">.bg-transparent</p>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Background gradient
+							</h3>
+							<div class="code-live">
+								<p
+									class="bg-primary text-white bg-gradient p-3"
+								>
+									.bg-primary.bg-gradient
+								</p>
+								<p
+									class="bg-secondary text-white bg-gradient p-3"
+								>
+									.bg-secondary.bg-gradient
+								</p>
+								<p
+									class="bg-success text-white bg-gradient p-3"
+								>
+									.bg-success.bg-gradient
+								</p>
+								<p class="bg-warning bg-gradient p-3">
+									.bg-warning.bg-gradient
+								</p>
+								<p class="bg-info bg-gradient p-3">
+									.bg-info.bg-gradient
+								</p>
+								<p class="bg-light bg-gradient p-3">
+									.bg-light.bg-gradient
+								</p>
+								<p class="bg-dark text-white bg-gradient p-3">
+									.bg-dark.bg-gradient
+								</p>
+							</div>
+						</div>
 
-                        </div>
-                    </div>
-
-                    <div class="code-example mb-5">
-                        <h3 class="component-variation text-danger">Background gradient</h3>
-                        <div class="code-live">
-                            <p class="bg-primary text-white bg-gradient p-3 ">.bg-primary.bg-gradient</p>
-                            <p class="bg-secondary text-white bg-gradient p-3">.bg-secondary.bg-gradient</p>
-                            <p class="bg-success text-white bg-gradient p-3">.bg-success.bg-gradient</p>
-                            <p class="bg-warning bg-gradient p-3">.bg-warning.bg-gradient</p>
-                            <p class="bg-info bg-gradient p-3">.bg-info.bg-gradient</p>
-                            <p class="bg-light bg-gradient p-3">.bg-light.bg-gradient</p>
-                            <p class="bg-dark text-white bg-gradient p-3">.bg-dark.bg-gradient</p>
-                        </div>
-                    </div>
-
-                    <div class="code-example mb-5">
-                        <h3 class="component-variation text-danger">Opacity</h3>
-                        <div class="code-live">
-                            <!-- 
-                                - Default value of opacity is 100% 
-                                - --bs-bg-opacity: 1;
-                            -->
-                            <p class="bg-success text-white p-3 bg-opacity-100">
-                                This is default success background
-                            </p>
-                            <p class="bg-success text-white p-3 bg-opacity-75">
-                                This is 75% opacity success background
-                            </p>
-                            <p class="bg-success p-3 bg-opacity-50">
-                                This is 50% opacity success background
-                            </p>
-                            <p class="bg-success p-3 bg-opacity-25">
-                                This is 25% opacity success background
-                            </p>
-                            <p class="bg-success p-3 bg-opacity-10">
-                                This is 10% opacity success background
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- 
-
-
-
-    -->
-    <!-- Bootstrap Js  -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Change Background Opacity
+							</h3>
+							<div class="code-live">
+								<!-- 
+                                    - Default value of opacity is 100% 
+                                    - --bs-bg-opacity: 1;
+                                -->
+								<p
+									class="p-3 text-white bg-success bg-opacity-100"
+								>
+									This is default success background
+								</p>
+								<p
+									class="p-3 text-white bg-success bg-opacity-75"
+								>
+									This is 75% opacity success background
+								</p>
+								<p class="p-3 bg-success bg-opacity-50">
+									This is 50% opacity success background
+								</p>
+								<p class="p-3 bg-success bg-opacity-25">
+									This is 25% opacity success background
+								</p>
+								<p class="p-3 bg-success bg-opacity-10">
+									This is 10% opacity success background
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js  -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

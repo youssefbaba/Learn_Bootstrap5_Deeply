@@ -1,127 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Borders</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Styling to better show these examples -->
+		<style type="text/css">
+			/* any class start exactly by  string "border" or "rounded"  */
+			div[class^="border"],
+			div[class^="rounded"] {
+				display: inline-block;
+				margin: 1em;
+				width: 5em;
+				height: 5em;
+				background-color: #f5f5f5;
+			}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utilities: Borders</title>
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Styling to better show these examples -->
-    <style type="text/css">
-        div[class^="border"],
-        div[class^="rounded"] {
-            display: inline-block;
-            margin: 1em;
-            width: 5em;
-            height: 5em;
-            background-color: #f5f5f5;
-        }
+			/* any class ends exactly by string "-0" */
+			div[class$="-0"] {
+				border: 1px solid #dee2e6;
+			}
 
-        div[class$="-0"] {
-            border: 1px solid #dee2e6;
-        }
+			.code-live img {
+				margin: 1em;
+			}
+		</style>
+	</head>
 
-        .code-live img {
-            margin: 1em;
-        }
-    </style>
-</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Borders
+						</h2>
+						<hr />
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Additive
+							</h3>
+							<div class="code-live">
+								<div class="border"></div>
+								<div class="border-top"></div>
+								<div class="border-end"></div>
+								<div class="border-bottom"></div>
+								<div class="border-start"></div>
+								<div class="border-top border-end"></div>
+								<div class="border-start border-bottom"></div>
+							</div>
+						</div>
 
-<body>
-    <main>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-12 col-lg-9">
-                    <h2 class="component display-4">Borders</h2>
-                    <hr>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Subtractive
+							</h3>
+							<div class="code-live">
+								<div class="border-0"></div>
+								<div class="border-top-0"></div>
+								<div class="border-end-0"></div>
+								<div class="border-bottom-0"></div>
+								<div class="border-start-0"></div>
+								<div class="border-top-0 border-end-0"></div>
+								<div
+									class="border-start-0 border-bottom-0"
+								></div>
+							</div>
+						</div>
 
-                    <div class="code-example mb-5"
-                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-                        <h3 class="component-variation text-muted">Additive</h3>
-                        <div class="code-live">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Color
+							</h3>
+							<div class="code-live">
+								<div class="border border-primary"></div>
+								<div class="border border-secondary"></div>
+								<div class="border border-success"></div>
+								<div class="border border-danger"></div>
+								<div class="border border-warning"></div>
+								<div class="border border-info"></div>
+								<div class="border border-light"></div>
+								<div class="border border-dark"></div>
+								<div class="border border-white"></div>
+							</div>
+						</div>
 
-                    <div class="code-example mb-5"
-                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}&#10;div[class$="-0"] {&#10;&#9;border: 1px solid #dee2e6;&#10;}'>
-                        <h3 class="component-variation text-muted">Subtractive</h3>
-                        <div class="code-live">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Border width
+							</h3>
+							<div class="code-live">
+								<div class="border border-1"></div>
+								<div class="border border-2"></div>
+								<div class="border border-3"></div>
+								<div class="border border-4"></div>
+								<div class="border border-5"></div>
+							</div>
+						</div>
 
-                    <div class="code-example mb-5"
-                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-                        <h3 class="component-variation text-muted">Color</h3>
-                        <div class="code-live">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Border Radius
+							</h3>
+							<div class="code-live">
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-top"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-end"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-bottom"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-start"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-circle"
+								/>
+								<img
+									src="https://via.placeholder.com/200x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-pill"
+								/>
+							</div>
+						</div>
 
-                    <div class="code-example mb-5"
-                        data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-                        <h3 class="component-variation text-muted">Width</h3>
-                        <div class="code-live">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                    <div class="code-example mb-5"
-                        data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-                        <h3 class="component-variation text-muted">Radius</h3>
-                        <div class="code-live">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/200x100.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="code-example mb-5"
-                        data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-                        <h3 class="component-variation text-muted">Radius size</h3>
-                        <div class="code-live">
-                            <img src="../img/100x100.png" alt="" style="border-radius: 10px;">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                            <img src="../img/100x100.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-muted">
+								Radius size
+							</h3>
+							<div class="code-live">
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									style="border-radius: 10px"
+									class="rounded-0"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-1"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-2"
+								/>
+								<img
+									src="https://via.placeholder.com/100x100/6C757D/FFF?Text=Youssef+Baba "
+									alt="image"
+									class="rounded-3"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

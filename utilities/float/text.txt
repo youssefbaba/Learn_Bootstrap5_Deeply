@@ -1,0 +1,103 @@
+###########  Float #######
+
+- .float-start
+- .float-end
+- .float-none
+- .float-sm-start
+- .float-sm-end
+- .float-sm-none
+- .float-md-start
+- .float-md-end
+- .float-md-none
+- .float-lg-start
+- .float-lg-end
+- .float-lg-none
+- .float-xl-start
+- .float-xl-end
+- .float-xl-none
+- .float-xxl-start
+- .float-xxl-end
+- .float-xxl-none
+
+- used for float an element to the left or to the right or disable float 
+- float utilities have no effect on flex items
+- from  _utilities.scss =>
+
+"float": (
+    responsive: true,
+    property: float,
+    values: (
+    start: left,
+    end: right,
+    none: none,
+    )
+)
+- final output : 
+
+-xs :
+.float-start{
+    float : left !important ;
+}
+.float-end{
+    float : right !important ;
+}
+.float-none{
+    float : none !important ;
+}
+
+
+-sm :
+.float-sm-start{
+    float : left !important ;
+}
+.float-sm-end{
+    float : right !important ;
+}
+.float-sm-none{
+    float : none !important ;
+}
+
+-md :
+.float-md-start{
+    float : left !important ;
+}
+.float-md-end{
+    float : right !important ;
+}
+.float-md-none{
+    float : none !important ;
+}
+
+-lg :
+.float-lg-start{
+    float : left !important ;
+}
+.float-lg-end{
+    float : right !important ;
+}
+.float-lg-none{
+    float : none !important ;
+}
+
+-xl :
+.float-xl-start{
+    float : left !important ;
+}
+.float-xl-end{
+    float : right !important ;
+}
+.float-xl-none{
+    float : none !important ;
+}
+
+
+-xxl :
+.float-xxl-start{
+    float : left !important ;
+}
+.float-xxl-end{
+    float : right !important ;
+}
+.float-xxl-none{
+    float : none !important ;
+}

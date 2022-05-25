@@ -1,0 +1,53 @@
+/* First Method */
+/*
+
+
+$utilities: (
+	"text-opacity": (
+		css-var: true,
+		class: text-opacity,
+		values: (
+			25: 0.25,
+			50: 0.5,
+			75: 0.75,
+			20: 0.2,
+			40: 0.4,
+			60: 0.6,
+			80: 0.8,
+		),
+	),
+);
+
+
+*/
+/* Second Method */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"text-opacity":
+			map-merge(
+				map-get($utilities, "text-opacity"),
+				(
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "text-opacity"),
+								"values"
+							),
+							(
+								20: 0.2,
+								40: 0.4,
+								60: 0.6,
+								80: 0.8,
+							)
+						),
+				)
+			),
+	)
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

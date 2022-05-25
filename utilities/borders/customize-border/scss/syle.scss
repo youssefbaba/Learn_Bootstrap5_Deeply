@@ -1,0 +1,50 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"border-width":
+			map-merge(
+				map-get($utilities, "border-width"),
+				(
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "border-width"),
+								"values"
+							),
+							(
+								6: 6px,
+								7: 7px,
+								8: 8px,
+								9: 9px,
+								10: 10px,
+							)
+						),
+				)
+			),
+		"rounded":
+			map-merge(
+				map-get($utilities, "rounded"),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded"), "values"),
+							(
+								4: 0.4rem,
+								5: 0.5rem,
+								6: 0.6rem,
+								7: 0.7rem,
+								8: 0.8rem,
+								9: 0.9rem,
+								10: 1rem,
+							)
+						),
+				)
+			),
+	)
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

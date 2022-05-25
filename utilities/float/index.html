@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Float</title>
+		<!-- Bootstrap Css  -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4">Float</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Default
+							</h3>
+							<div class="code-live">
+								<div>
+									<div
+										class="text-danger bg-info p-3 float-start"
+									>
+										Float start on all viewport sizes
+									</div>
+									<p class="m-0 clearfix"></p>
+									<div
+										class="text-danger bg-warning p-3 float-end"
+									>
+										Float end on all viewport sizes
+									</div>
+									<p class="m-0 clearfix"></p>
+									<div class="text-danger bg-success p-3">
+										Don't float on all viewport sizes
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Test
+							</h3>
+							<div class="code-live">
+								<h4 class="text-success">Without clearfix</h4>
+								<div class="mt-3">
+									<div
+										class="d-flex justify-content-center align-items-center text-dark bg-info p-3 float-start"
+										style="height: 150px; width: 150px"
+									>
+										Float start
+									</div>
+									<div>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Quasi odio eligendi,
+										reiciendis optio, adipisci atque sit
+										fugiat magni amet corporis officia alias
+										repellendus magnam voluptas maiores
+										nesciunt hic perspiciatis rerum
+										voluptates, doloribus omnis sunt! Iusto
+										totam nihil dolore animi. Officia alias
+										facere exercitationem ad, quia sint vero
+										fugit impedit iure. Quasi soluta
+										exercitationem nostrum dolorum cumque,
+										incidunt optio. Obcaecati omnis quos,
+										enim eaque maxime, velit provident nemo
+										consequatur quas repellat consectetur
+										ipsum cumque fugit! Beatae doloremque
+										tempore commodi voluptates ullam. Et
+										aliquam itaque sequi vitae minima esse
+										expedita aut quibusdam rerum iste quam,
+										omnis natus distinctio provident
+										ratione, inventore architecto!
+									</div>
+								</div>
+							</div>
+							<div class="code-live mt-3">
+								<h4 class="text-success">With ClearFix</h4>
+								<div class="bg-info clearfix">
+									<button
+										type="button"
+										class="btn btn-secondary float-start"
+									>
+										Example Button floated left
+									</button>
+									<button
+										type="button"
+										class="btn btn-secondary float-end"
+									>
+										Example Button floated right
+									</button>
+								</div>
+							</div>
+							<div class="code-live">
+								<h4 class="text-success">
+									Float no effect on flex items
+								</h4>
+								<div class="d-flex bg-info p-3">
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item 1
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item 2
+									</div>
+									<div
+										class="bg-warning border border-dark p-2"
+									>
+										Flex Item 3
+									</div>
+									<div
+										class="bg-warning border border-dark p-2 float-end"
+									>
+										Flex Item 4
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Responsive
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Float left</h4>
+								<div class="float-sm-start">
+									Float left for breakpoints sm and up
+								</div>
+								<br />
+								<div class="float-md-start">
+									Float left for breakpoints md and up
+								</div>
+								<br />
+								<div class="float-lg-start">
+									Float left for breakpoints lg and up
+								</div>
+								<br />
+								<div class="float-xl-start">
+									Float left for breakpoints xl and up
+								</div>
+								<br />
+								<div class="float-xxl-start">
+									Float left for breakpoints xxl and up
+								</div>
+								<br />
+								<h4 class="h5 text-danger mt-3">Float right</h4>
+								<div class="float-sm-end">
+									Float right for breakpoints sm and up
+								</div>
+								<br />
+								<div class="float-md-end">
+									Float right for breakpoints md and up
+								</div>
+								<br />
+								<div class="float-lg-end">
+									Float right for breakpoints lg and up
+								</div>
+								<br />
+								<div class="float-xl-end">
+									Float right for breakpoints xl and up
+								</div>
+								<br />
+								<div class="float-xxl-end">
+									Float right for breakpoints xxl and up
+								</div>
+								<br />
+								<h4 class="h5 text-muted mt-3">Float none</h4>
+								<div class="float-sm-none">
+									Don't float for breakpoints sm and up
+								</div>
+								<br />
+								<div class="float-md-none">
+									Don't float for breakpoints md and up
+								</div>
+								<br />
+								<div class="float-lg-none">
+									Don't float for breakpoints lg and up
+								</div>
+								<br />
+								<div class="float-xl-none">
+									Don't float for breakpoints xl and up
+								</div>
+								<br />
+								<div class="float-xxl-none">
+									Don't float for breakpoints xxl and up
+								</div>
+								<br />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootsrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

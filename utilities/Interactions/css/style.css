@@ -1,0 +1,20 @@
+.test-one::before {
+	content: "Before Pseudo Element";
+	color: red;
+	display: block;
+}
+.test-one::after {
+	content: "After Pseudo Element";
+	color: blue;
+	display: block;
+}
+.parent {
+	height: 100px;
+	width: 400px;
+	background-color: #ccc;
+}
+.child {
+	width: 40px;
+	height: 40px;
+	background-color: crimson;
+}

@@ -1,0 +1,1 @@
+- in mixins/_gradients.scss you can use these mixins gradient to create your own gradients
