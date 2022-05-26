@@ -1,0 +1,351 @@
+############  alignment text ############
+- from _utilities.scss =>
+ "text-align": (
+      responsive: true,
+      property: text-align,
+      class: text,
+      values: (
+        start: left,
+        end: right,
+        center: center,
+      )
+)
+- xs :
+.text-start{
+    text-align: left !important ;
+}
+.text-end{
+    text-align: right !important ;
+}
+.text-center{
+    text-align: center !important ;
+}
+
+- sm :
+.text-sm-start{
+    text-align: left !important ;
+}
+.text-sm-end{
+    text-align: right !important ;
+}
+.text-sm-center{
+    text-align: center !important ;
+}
+
+
+- md :
+.text-md-start{
+    text-align: left !important ;
+}
+.text-md-end{
+    text-align: right !important ;
+}
+.text-md-center{
+    text-align: center !important ;
+}
+
+
+- lg :
+.text-lg-start{
+    text-align: left !important ;
+}
+.text-lg-end{
+    text-align: right !important ;
+}
+.text-lg-center{
+    text-align: center !important ;
+}
+
+
+- xl :
+.text-xl-start{
+    text-align: left !important ;
+}
+.text-xl-end{
+    text-align: right !important ;
+}
+.text-xl-center{
+    text-align: center !important ;
+}
+
+
+- xxl :
+.text-xxl-start{
+    text-align: left !important ;
+}
+.text-xxl-end{
+    text-align: right !important ;
+}
+.text-xxl-center{
+    text-align: center !important ;
+}
+
+
+
+
+############### Text wrapping and overflow #############
+- from _utilities.scss =>
+ "white-space": (
+      property: white-space,
+      class: text,
+      values: (
+        wrap: normal,
+        nowrap: nowrap,
+      )
+),
+
+.text-wrap{
+    white-space : normal !important;
+}
+.text-nowrap{
+    white-space : nowrap !important;
+}
+white-space : normal  : Sequences of white space are collapsed. Newline characters in the source are handled 
+                        the same as other white space. Lines are broken as necessary to fill line boxes.
+
+white-space : nowrap   : Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+
+
+################ Word Break ################
+- You can use the class .text-break to prevent long word from breaking your layout.
+- from _utilities.scss =>
+"word-wrap": (
+      property: word-wrap word-break,
+      class: text,
+      values: (break: break-word),
+      rtl: false
+) 
+.text-break{
+    word-wrap : break-word !important ;
+    word-break : break-word !important ;
+}
+
+########### Text Transform #########
+- from _utilities.scss =>
+"text-transform": (
+      property: text-transform,
+      class: text,
+      values: lowercase uppercase capitalize
+)
+
+.text-lowercase{
+    text-transform : lowercase !important ;
+}
+.text-uppercase{
+    text-transform : uppercase !important ;
+}
+.text-capitalize{
+    text-transform : capitalize !important ;
+}
+
+#########  Font size ############
+- utlities font size used only  to change font size of text 
+- from _utilities.scss =>
+
+"font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+)
+
+-from _variables.scss =>
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+) 
+.fs-1{
+    @include font-size($h1-font-size);
+}
+        - output final
+
+            .fs-1 {
+                font-size: calc(1.375rem + 1.5vw) !important;
+            }
+
+            @media (min-width: 1200px) {
+                .fs-1 {
+                    font-size: 2.5rem !important;
+                }   
+            }
+
+
+.fs-2{
+    @include font-size($h2-font-size);
+}
+
+        - output final
+        
+            .fs-2 {
+                font-size: calc(1.325rem + 0.9vw) !important;
+            }
+
+            @media (min-width: 1200px) {
+                .fs-2 {
+                    font-size: 2rem !important;
+                }   
+            }
+
+
+
+.fs-3{
+    @include font-size($h3-font-size);
+}
+.fs-4{
+    @include font-size($h4-font-size);
+}
+.fs-5{
+    @include font-size($h5-font-size);
+}
+.fs-6{
+    @include font-size($h6-font-size);
+}
+
+########## Font Style ##############
+- from _utilities.scss =>
+
+"font-style": (
+      property: font-style,
+      class: fst,
+      values: italic normal
+)
+.fst-italic{
+    font-style : italic !important ;
+}
+.fst-normal{
+    font-style : normal !important ;
+}
+
+########## Font weight #########
+- from _utilities.scss =>
+"font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder
+      )
+)
+
+$font-weight-light: 300 ;
+$font-weight-lighter: lighter;
+$font-weight-normal: 400 ;
+$font-weight-bold: 700 ;
+$font-weight-bolder: bolder;
+
+
+-default output :
+
+.fw-light{
+    font-weight : 300 !important ;
+}
+.fw-lighter{
+    font-weight : lighter !important ;
+}
+.fw-normal{
+    font-weight : 400 !important ;
+}
+.fw-normal{
+    font-weight : 400 !important ;
+}
+.fw-bold{
+    font-weight : 700 !important ;
+}
+.fw-bolder{
+    font-weight : bolder !important ;
+}
+
+######## Line Height #############
+- from _utilities.scss =>
+
+"line-height": (
+      property: line-height,
+      class: lh,
+      values: (
+        1: 1,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg,
+      )
+)
+
+- from _variables.scss =>
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+- final output : 
+.lh-1{
+    line-height : 1 !important ;
+}
+.lh-sm{
+    line-height : 1.25 !important ;
+}
+.lh-base{
+    line-height : 1.5 !important ;
+}
+.lh-lg{
+    line-height : 2 !important ;
+}
+
+########### font familly ##########
+- from _utilities.scss =>
+"font-family": (
+      property: font-family,
+      class: font,
+      values: (monospace: var(--#{$variable-prefix}font-monospace))
+)
+
+-from _variables.scss =>
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+
+- from _root.scss =>
+--#{$variable-prefix}font-monospace: #{inspect($font-family-monospace)};
+
+
+- fianl output : 
+.font-monospace{
+    font-family : var(--bs-font-monospace) !important ;
+}
+- iterpretation :  
+.font-monospace{
+    font-family : SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace  !important ;
+}
+
+######## Reset Color ######
+
+.text-reset{
+    color : inherit !important ;
+}
+
+
+############ Text Decoration #######
+- from _utilities.scss =>
+ "text-decoration": (
+      property: text-decoration,
+      values: none underline line-through
+)
+
+.text-decoration-none{
+    text-decoration : none !important ;
+}
+.text-decoration-underline{
+    text-decoration : underline !important ;
+}
+.text-decoration-line-through{
+    text-decoration : line-through !important ;
+}
+
+
+
+
+

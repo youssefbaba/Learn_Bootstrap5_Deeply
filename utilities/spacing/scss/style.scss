@@ -1,0 +1,7 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$enable-negative-margins: true;
+$result: negativify-map($spacers);
+@debug $result;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,22 @@
+.parent p {
+	line-height: 3em;
+	font-size: 1.2em;
+	font-family: monospace;
+	text-decoration: underline overline;
+	border: 1px solid red;
+	padding: 1rem;
+}
+
+.parent p img {
+	flex-grow: 0;
+	border: 1px solid green;
+	/* Parent-relative values */
+	/* vertical-align: baseline; */
+	/* vertical-align: text-top; */
+	/* vertical-align: text-bottom; */
+	/* vertical-align: middle; */
+
+	/* Line-relative values */
+	/* vertical-align: top; */
+	vertical-align: bottom;
+}

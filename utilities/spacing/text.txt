@@ -1,0 +1,102 @@
+######## Spacing (Margin , Padding) ###########
+
+{property}{sides}-{size} for all breakpoints
+{property}{sides}-{breakpoint}-{size} for specific breakpoints and up
+
+Properties:
+m - margin
+p - padding
+
+Sides:
+t - top
+e - right (end) in LTR , left in RTL
+b - bottom
+s - left (start) in LTR , right in RTL
+x - left and right
+y - top and bottom
+[blank] - all four sides
+
+Breakpoints:
+sm - small
+md - medium
+lg - large
+xl - extra large
+xxl - extra extra large
+
+Sizes:
+0 - 0
+1 - 0.25rem
+2 - 0.5rem
+3 - 1rem
+4 - 1.5rem
+5 - 3rem
+auto - auto (only for margins)
+
+
+
+n1 - -0.25rem (only for margins and disabled by default)
+n2 - -0.5rem (only for margins and disabled by default)
+n3 - -1rem (only for margins and disabled by default)
+n4 - -1.5rem (only for margins and disabled by default)
+n5 - -3rem (only for margins and disabled by default)
+
+############### Gap ###########
+- from _utilities.scss =>
+  "gap": (
+      responsive: true,
+      property: gap,
+      class: gap,
+      values: $spacers
+)
+0 - 0
+1 - 0.25rem
+2 - 0.5rem
+3 - 1rem
+4 - 1.5rem
+5 - 3rem
+
+- final output :
+
+- xs 
+.gap-0{
+    gap : 0 !important ;
+}
+.gap-1{
+    gap : 0.25rem !important ;
+}
+.gap-2{
+    gap : 0.5rem !important ;
+}
+.gap-3{
+    gap : 1rem !important ;
+}
+.gap-4{
+    gap : 1.5rem !important ;
+}
+.gap-5{
+    gap : 3rem !important ;
+}
+-sm 
+
+.gap-sm-0{
+    gap : 0 !important ;
+}
+.gap-sm-1{
+    gap : 0.25rem !important ;
+}
+.gap-sm-2{
+    gap : 0.5rem !important ;
+}
+.gap-sm-3{
+    gap : 1rem !important ;
+}
+.gap-sm-4{
+    gap : 1.5rem !important ;
+}
+.gap-sm-5{
+    gap : 3rem !important ;
+}
+.
+.
+.
+

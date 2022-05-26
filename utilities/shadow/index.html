@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Shadows</title>
+		<!-- Bootstrap Css -->
+		<!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Shadows
+						</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<div class="code-live">
+								<h4 class="text-danger">
+									Test for enabled $enable-shadows variable
+								</h4>
+								<form class="row g-3">
+									<div class="col-12">
+										<label
+											for="inputAddress"
+											class="form-label"
+											>Address</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="inputAddress"
+											placeholder="1234 Main St"
+										/>
+									</div>
+									<div class="col-12">
+										<label
+											for="inputAddress2"
+											class="form-label"
+											>Address 2</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="inputAddress2"
+											placeholder="Apartment, studio, or floor"
+										/>
+									</div>
+									<div class="col-12">
+										<label
+											for="exampleFormControlTextarea1"
+											class="form-label"
+											>Example textarea</label
+										>
+										<textarea
+											class="form-control"
+											id="exampleFormControlTextarea1"
+											rows="3"
+										></textarea>
+									</div>
+									<div class="col-12">
+										<button
+											type="submit"
+											class="btn btn-primary"
+										>
+											Sign in
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="code-live mt-5">
+								<div
+									class="card p-3 mb-5 bg-light shadow-none"
+									style="
+										box-shadow: rgba(0, 0, 0, 0.35) 0px 5px
+											15px;
+									"
+								>
+									No shadow
+								</div>
+								<div class="card p-3 mb-5 shadow">
+									Regular shadow
+								</div>
+								<div class="card p-3 mb-5 shadow-sm">
+									Small shadow
+								</div>
+								<div class="card p-3 mb-5 shadow-lg">
+									Large shadow
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

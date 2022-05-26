@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Utilities: Vertical align</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Style Css -->
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Vertical align
+						</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Inline and inline-block
+							</h3>
+							<div class="code-live">
+								<div class="parent">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4"
+									>
+										Align Baseline Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-baseline"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+								<div class="parent mt-3">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4"
+									>
+										Align Text-top Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-text-top"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+								<div class="parent">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4"
+									>
+										Align Text-bottom Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-text-bottom"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+								<div class="parent">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4 text-decoration-underline"
+									>
+										Align Middle Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-middle"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+								<div class="parent">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4"
+									>
+										Align Top Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-top"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+								<div class="parent">
+									<p
+										class="lh-lg fs-2 font-monospace border border-1 border-danger p-4"
+									>
+										Align Bottom Image :
+										<img
+											src="https://via.placeholder.com/20x20/6C757D/FFF"
+											alt="image"
+											class="border border-1 border-success align-bottom"
+										/>
+										Lorem ipsum dolor sit.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Table cell
+							</h3>
+							<div class="code-live">
+								<!-- <p>
+									Text-top and text-bottom not applicable on
+									table cells
+								</p> -->
+								<table class="table" style="height: 200px">
+									<tbody>
+										<tr
+											class="border border-1 border-danger"
+										>
+											<td class="p-3 align-baseline">
+												<span>Baseline</span>
+											</td>
+											<td class="align-top p-3">
+												<span>Top</span>
+											</td>
+											<td class="p-3 align-middle">
+												<span>Middle</span>
+											</td>
+											<td class="p-3 align-bottom">
+												<span>Bottom</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

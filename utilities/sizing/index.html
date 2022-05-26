@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bootstrap 5 Learning Kit – Practice – Utilities: Sizing</title>
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">Sizing</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Relative to parent
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Width</h4>
+								<div class="bg-info">
+									<div class="bg-warning p-3 w-5">5% C</div>
+									<div class="bg-warning p-3 w-10">
+										width 10% C
+									</div>
+									<div class="bg-warning p-3 w-20">
+										width 20% C
+									</div>
+									<div class="bg-warning p-3 w-25">
+										width 25% D
+									</div>
+									<div class="bg-warning p-3 w-45">
+										width 45% C
+									</div>
+									<div class="bg-warning p-3 w-50">
+										width 50% D
+									</div>
+									<div class="bg-warning p-3 w-60">
+										width 60% C
+									</div>
+									<div class="bg-warning p-3 w-75">
+										width 75% D
+									</div>
+									<div class="bg-warning p-3 w-80">
+										width 80% C
+									</div>
+									<div class="bg-warning p-3 w-100">
+										width 100% D
+									</div>
+									<div class="bg-warning p-3 w-auto">
+										width auto D
+									</div>
+								</div>
+
+								<h4 class="h5 text-danger mt-3">Height</h4>
+								<div class="bg-info" style="height: 200px">
+									<div
+										class="d-inline-block bg-warning w-15 h-15"
+									>
+										height 15% C
+									</div>
+									<div
+										class="d-inline-block bg-warning w-15 h-25"
+									>
+										height 25% D
+									</div>
+									<div
+										class="d-inline-block bg-warning w-15 h-50"
+									>
+										height 50% D
+									</div>
+									<div
+										class="d-inline-block bg-warning w-15 h-75"
+									>
+										height 75% D
+									</div>
+
+									<div
+										class="d-inline-block bg-warning w-15 h-100"
+									>
+										height 100% D
+									</div>
+									<div
+										class="d-inline-block bg-warning w-15 h-auto"
+									>
+										height auto D
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-primary">
+								Max width and height
+							</h3>
+							<div class="code-live">
+								<h4 class="h5 text-danger mt-3">Max-width</h4>
+								<div class="border border-2 border-danger">
+									<img
+										src="https://via.placeholder.com/1200x600/6C757D/FFF?text=Max+Width"
+										alt="Max-width = 100%"
+										class="mw-100"
+									/>
+								</div>
+								<h4 class="h5 text-danger mt-3">Max-height</h4>
+								<div class="bg-info" style="height: 200px">
+									<div
+										class="bg-warning w-20 mh-100"
+										style="height: 400px"
+									>
+										Max Width 100%
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="code-example mb-5">
+							<h3 class="component-variation text-muted">
+								Column classes
+							</h3>
+							<p>
+								Parent element must be a block-level element
+								(<code>display: block;</code>)
+							</p>
+							<div class="code-live">
+								<h4 class="h5 text-muted mt-3">
+									All breakpoints
+								</h4>
+								<div class="bg-secondary">
+									<div class="bg-light p-2">Width 1/12</div>
+									<div class="bg-light p-2">Width 1/6</div>
+									<div class="bg-light p-2">Width 1/4</div>
+									<div class="bg-light p-2">Width 1/3</div>
+									<div class="bg-light p-2">Width 5/12</div>
+									<div class="bg-light p-2">Width 1/2</div>
+									<div class="bg-light p-2">Width 7/12</div>
+									<div class="bg-light p-2">Width 2/3</div>
+									<div class="bg-light p-2">Width 3/4</div>
+									<div class="bg-light p-2">Width 5/6</div>
+									<div class="bg-light p-2">Width 11/12</div>
+									<div class="bg-light p-2">Width 1/1</div>
+								</div>
+								<h4 class="h5 text-muted mt-3">Responsive</h4>
+								<p>
+									Example: XS: 1/6, SM: 1/3, MD: 1/2, LG: 2/3,
+									XL: 5/6, XXL: 1/1
+								</p>
+								<div class="bg-secondary">
+									<div class="bg-light p-2">Example</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="container mb-5">
+			<h3 class="component-variation text-primary">
+				Relative to viewport
+			</h3>
+			<div class="code-live">
+				<h4 class="h5 text-danger mt-3">Width</h4>
+				<img
+					src="https://via.placeholder.com/600x250/6C757D/FFF?text=Viewport:25vw "
+					alt="Viewport : 25vw"
+					class="vw-25 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x250/6C757D/FFF?text=Viewport:50vw "
+					alt="Viewport : 25vw"
+					class="vw-50 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x250/6C757D/FFF?text=Viewport:75vw "
+					alt="Viewport : 25vw"
+					class="vw-75 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x250/6C757D/FFF?text=Viewport:100vw "
+					alt="Viewport : 25vw"
+					class="vw-100 mb-3"
+				/>
+
+				<!-- <h4 class="h5 text-muted mt-3">Min-width</h4> -->
+
+				<!-- <h4 class="h5 text-muted mt-3">Height</h4> -->
+
+				<!-- <h4 class="h5 text-muted mt-3">Min-height</h4> -->
+			</div>
+			<div class="code-live">
+				<h4 class="h5 text-danger mt-3">Min-Width</h4>
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=25vw "
+					alt="Min Width Viewport : 25vw"
+					class="min-vw-25 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=50vw "
+					alt="Min Width Viewport : 25vw"
+					class="min-vw-50 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=75vw "
+					alt="Min Width Viewport : 25vw"
+					class="min-vw-75 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x250/6C757D/FFF?text=100vw "
+					alt="Min Width Viewport : 25vw"
+					class="min-vw-100 mb-3"
+				/>
+
+				<!-- <h4 class="h5 text-muted mt-3">Height</h4> -->
+
+				<!-- <h4 class="h5 text-muted mt-3">Min-height</h4> -->
+			</div>
+			<div class="code-live">
+				<h4 class="h5 text-danger mt-3">Height</h4>
+				<img
+					src="https://via.placeholder.com/600x300/6C757D/FFF?text=25vh "
+					alt="Height Viewport : 25vh"
+					class="vh-25 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x300/6C757D/FFF?text=50vh "
+					alt="Height Viewport : 50vh"
+					class="vh-50 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x300/6C757D/FFF?text=75vh "
+					alt="Height Viewport : 75vh"
+					class="vh-75 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/600x300/6C757D/FFF?text=100vh "
+					alt="Height Viewport : 100vh"
+					class="vh-100 mb-3"
+				/>
+			</div>
+			<div class="code-live">
+				<h4 class="h5 text-danger mt-3">Min Height</h4>
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=25vh "
+					alt="Min Height Viewport : 25vh"
+					class="min-vh-25 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=50vh "
+					alt="Min Height Viewport : 50vh"
+					class="min-vh-50 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=75vh "
+					alt="Min Height Viewport : 75vh"
+					class="min-vh-75 mb-3"
+				/>
+				<br />
+				<img
+					src="https://via.placeholder.com/200x100/6C757D/FFF?text=100vh "
+					alt="Min Height Viewport : 100vh"
+					class="min-vh-100 mb-3"
+				/>
+				<br />
+			</div>
+		</div>
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
