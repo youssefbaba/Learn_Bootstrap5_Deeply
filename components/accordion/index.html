@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Bootstrap 5 Learning Kit – Practice – Components: Accordion
+		</title>
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Accordion
+						</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Default
+							</h3>
+							<div class="code-live">
+								<div class="accordion" id="accordionParent">
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="headingOne"
+										>
+											<button
+												class="accordion-button"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseOne"
+												aria-expanded="true"
+												aria-controls="collapseOne"
+											>
+												Accordion Item #1
+											</button>
+										</h2>
+										<div
+											id="collapseOne"
+											class="accordion-collapse collapse show"
+											aria-labelledby="headingOne"
+											data-bs-parent="#accordionParent"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Doloremque vero iusto ipsam
+												cumque eveniet veniam ullam
+												consequatur temporibus quod
+												neque ratione nesciunt aliquam
+												pariatur officiis deserunt
+												reprehenderit, labore,
+												necessitatibus quia similique,
+												quaerat quisquam magni illum
+												excepturi at. Eveniet, odio
+												labore.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="headingTwo"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseTwo"
+												aria-expanded="false"
+												aria-controls="collapseTwo"
+											>
+												Accordion Item #2
+											</button>
+										</h2>
+										<div
+											id="collapseTwo"
+											class="accordion-collapse collapse"
+											aria-labelledby="headingTwo"
+											data-bs-parent="#accordionParent"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Doloremque vero iusto ipsam
+												cumque eveniet veniam ullam
+												consequatur temporibus quod
+												neque ratione nesciunt aliquam
+												pariatur officiis deserunt
+												reprehenderit, labore,
+												necessitatibus quia similique,
+												quaerat quisquam magni illum
+												excepturi at. Eveniet, odio
+												labore.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="headingThree"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseThree"
+												aria-expanded="false"
+												aria-controls="collapseThree"
+											>
+												Accordion Item #3
+											</button>
+										</h2>
+										<div
+											id="collapseThree"
+											class="accordion-collapse collapse"
+											aria-labelledby="headingThree"
+											data-bs-parent="#accordionParent"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur adipisicing elit.
+												Doloremque vero iusto ipsam
+												cumque eveniet veniam ullam
+												consequatur temporibus quod
+												neque ratione nesciunt aliquam
+												pariatur officiis deserunt
+												reprehenderit, labore,
+												necessitatibus quia similique,
+												quaerat quisquam magni illum
+												excepturi at. Eveniet, odio
+												labore.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Flush
+							</h3>
+							<div class="code-live">
+								<div
+									class="accordion accordion-flush"
+									id="accordionFlushExample"
+								>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="flush-headingOne"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseOne"
+												aria-expanded="false"
+												aria-controls="flush-collapseOne"
+											>
+												Accordion Item #1
+											</button>
+										</h2>
+										<div
+											id="flush-collapseOne"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingOne"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur, adipisicing elit.
+												Aut sequi velit facilis quo
+												mollitia omnis atque, tempore
+												molestiae inventore veritatis
+												officia perferendis unde
+												asperiores? In, ab? Sed
+												laboriosam eaque dolorem ullam,
+												natus voluptatem eligendi quos.
+												Sunt nesciunt possimus
+												reprehenderit odit.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="flush-headingTwo"
+										>
+											<button
+												class="accordion-button"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseTwo"
+												aria-expanded="true"
+												aria-controls="flush-collapseTwo"
+											>
+												Accordion Item #1
+											</button>
+										</h2>
+										<div
+											id="flush-collapseTwo"
+											class="accordion-collapse collapse show"
+											aria-labelledby="flush-headingTwo"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur, adipisicing elit.
+												Aut sequi velit facilis quo
+												mollitia omnis atque, tempore
+												molestiae inventore veritatis
+												officia perferendis unde
+												asperiores? In, ab? Sed
+												laboriosam eaque dolorem ullam,
+												natus voluptatem eligendi quos.
+												Sunt nesciunt possimus
+												reprehenderit odit.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="flush-headingThree"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseThree"
+												aria-expanded="false"
+												aria-controls="flush-collapseThree"
+											>
+												Accordion Item #1
+											</button>
+										</h2>
+										<div
+											id="flush-collapseThree"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingThree"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												Lorem ipsum dolor sit amet
+												consectetur, adipisicing elit.
+												Aut sequi velit facilis quo
+												mollitia omnis atque, tempore
+												molestiae inventore veritatis
+												officia perferendis unde
+												asperiores? In, ab? Sed
+												laboriosam eaque dolorem ullam,
+												natus voluptatem eligendi quos.
+												Sunt nesciunt possimus
+												reprehenderit odit.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Aulways Open
+							</h3>
+							<div class="code-live">
+								<div class="accordion">
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="elementHeadingOne"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseElementOne"
+												aria-expanded="false"
+												aria-controls="collapseElementOne"
+											>
+												Accordion Item #1
+											</button>
+										</h2>
+										<div
+											id="collapseElementOne"
+											class="accordion-collapse collapse"
+											aria-labelledby="elementHeadingOne"
+										>
+											<div class="accordion-body">
+												<strong
+													>This is the first item's
+													accordion body.</strong
+												>
+												It is shown by default, until
+												the collapse plugin adds the
+												appropriate classes that we use
+												to style each element. These
+												classes control the overall
+												appearance, as well as the
+												showing and hiding via CSS
+												transitions. You can modify any
+												of this with custom CSS or
+												overriding our default
+												variables. It's also worth
+												noting that just about any HTML
+												can go within the
+												<code>.accordion-body</code>,
+												though the transition does limit
+												overflow.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="elementHeadingTwo"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseElementTwo"
+												aria-expanded="false"
+												aria-controls="collapseElementTwo"
+											>
+												Accordion Item #2
+											</button>
+										</h2>
+										<div
+											id="collapseElementTwo"
+											class="accordion-collapse collapse"
+											aria-labelledby="elementHeadingTwo"
+										>
+											<div class="accordion-body">
+												<strong
+													>This is the first item's
+													accordion body.</strong
+												>
+												It is shown by default, until
+												the collapse plugin adds the
+												appropriate classes that we use
+												to style each element. These
+												classes control the overall
+												appearance, as well as the
+												showing and hiding via CSS
+												transitions. You can modify any
+												of this with custom CSS or
+												overriding our default
+												variables. It's also worth
+												noting that just about any HTML
+												can go within the
+												<code>.accordion-body</code>,
+												though the transition does limit
+												overflow.
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2
+											class="accordion-header"
+											id="elementHeadingThree"
+										>
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseElementThree"
+												aria-expanded="false"
+												aria-controls="collapseElementThree"
+											>
+												Accordion Item #2
+											</button>
+										</h2>
+										<div
+											id="collapseElementThree"
+											class="accordion-collapse collapse"
+											aria-labelledby="elementHeadingThree"
+										>
+											<div class="accordion-body">
+												<strong
+													>This is the first item's
+													accordion body.</strong
+												>
+												It is shown by default, until
+												the collapse plugin adds the
+												appropriate classes that we use
+												to style each element. These
+												classes control the overall
+												appearance, as well as the
+												showing and hiding via CSS
+												transitions. You can modify any
+												of this with custom CSS or
+												overriding our default
+												variables. It's also worth
+												noting that just about any HTML
+												can go within the
+												<code>.accordion-body</code>,
+												though the transition does limit
+												overflow.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js -->
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

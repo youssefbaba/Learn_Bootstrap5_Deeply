@@ -1,0 +1,21 @@
+{
+	"name": "accordion",
+	"version": "1.0.0",
+	"description": "Accordion Test ",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch scss:css"
+	},
+	"keywords": [
+		"Bootstrap5",
+		"Accordion"
+	],
+	"author": "youssefbaba",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.52.1"
+	},
+	"dependencies": {
+		"bootstrap": "5.1"
+	}
+}

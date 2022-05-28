@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Components: Collapse</title>
+		<!-- Style Css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<h2 class="component display-4 text-primary">
+							Collapse
+						</h2>
+						<hr />
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Link
+							</h3>
+							<p>
+								Show and hide other content with link using the
+								"href" attribute
+							</p>
+							<div class="code-live">
+								<!-- Control Element -->
+								<p>
+									<a
+										class="btn btn-primary"
+										role="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#hrefCollapse"
+										aria-expanded="false"
+										aria-controls="hrefCollapse"
+										>Link With Href</a
+									>
+								</p>
+								<!-- Collapse Element -->
+								<div class="collapse show" id="hrefCollapse">
+									<div class="alert alert-warning">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Expedita dignissimos
+										quisquam deleniti enim eaque repellendus
+										unde autem veritatis voluptatem natus
+										eveniet maxime accusantium, veniam
+										optio, blanditiis debitis illo fuga non.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Button
+							</h3>
+							<p>
+								Show and hide other content with button using
+								the "data-bs-target" attribute
+							</p>
+							<div class="code-live">
+								<!-- Control Element -->
+								<p>
+									<button
+										class="btn btn-primary"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#buttonCollapse"
+										aria-expanded="false"
+										aria-controls="buttonCollapse"
+									>
+										Button data-bs-target
+									</button>
+								</p>
+								<!-- Collapse Element -->
+								<div class="collapse" id="buttonCollapse">
+									<div class="alert alert-warning">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Minus sequi voluptates
+										nesciunt ab fuga, harum aut aspernatur.
+										Molestiae omnis consequuntur perferendis
+										asperiores officia veritatis beatae
+										nostrum saepe magni! Nihil, saepe.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Test
+							</h3>
+							<p>
+								Show and hide other content with button using
+								the "data-bs-target" attribute
+							</p>
+							<div class="code-live">
+								<!-- Controls Element -->
+								<p>
+									<button
+										class="btn btn-primary"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#buttonLinkCollapse"
+										aria-expanded="false"
+										aria-controls="buttonLinkCollapse"
+									>
+										Button data-bs-target
+									</button>
+									<a
+										class="btn btn-primary"
+										role="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#buttonLinkCollapse"
+										aria-expanded="false"
+										aria-controls="buttonLinkCollapse"
+									>
+										Link With Href
+									</a>
+								</p>
+								<!-- Collapse Element -->
+								<div class="collapse" id="buttonLinkCollapse">
+									<div class="alert alert-warning">
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Minus sequi voluptates
+										nesciunt ab fuga, harum aut aspernatur.
+										Molestiae omnis consequuntur perferendis
+										asperiores officia veritatis beatae
+										nostrum saepe magni! Nihil, saepe.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Horizontal Button
+							</h3>
+							<p>
+								Set width on the immediate child of the
+								collapsed element
+							</p>
+							<div class="code-live">
+								<!-- Control Element -->
+								<p>
+									<button
+										class="btn btn-primary"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#horizontalButtonCollapse1"
+										aria-expanded="false"
+										aria-controls="horizontalButtonCollapse1"
+									>
+										Toggle With Collapse Button
+									</button>
+								</p>
+								<div style="min-height: 160px">
+									<div
+										class="collapse collapse-horizontal"
+										id="horizontalButtonCollapse1"
+									>
+										<div
+											class="alert alert-warning"
+											style="width: 400px"
+										>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Horizontal Link
+							</h3>
+							<p>
+								Set width on the immediate child of the
+								collapsed element
+							</p>
+							<div class="code-live">
+								<!-- Control Element -->
+								<p>
+									<a
+										class="btn btn-primary"
+										role="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#horizontalButtonCollapse2"
+										aria-expanded="false"
+										aria-controls="horizontalButtonCollapse2"
+										>Toggle Width Collapse Link</a
+									>
+								</p>
+								<div style="min-height: 160px">
+									<div
+										class="collapse collapse-horizontal"
+										id="horizontalButtonCollapse2"
+									>
+										<div
+											class="alert alert-warning"
+											style="width: 400px"
+										>
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Multiple targets Links And Buttons
+							</h3>
+							<!-- Controls Element -->
+							<p class="code-live">
+								<button
+									class="btn btn-primary"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseElement1"
+									aria-expanded="false"
+									aria-controls="collapseElement1"
+								>
+									Button Toggle first
+								</button>
+								<button
+									class="btn btn-primary"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseElement2"
+									aria-expanded="false"
+									aria-controls="collapseElement2"
+								>
+									Button Toggle second
+								</button>
+								<button
+									class="btn btn-primary"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target=".multiplecollapse"
+									aria-expanded="false"
+									aria-controls="collapseElement1 collapseElement2"
+								>
+									Button Toggle both
+								</button>
+								<a
+									class="btn btn-primary"
+									role="button"
+									data-bs-toggle="collapse"
+									href="#collapseElement1"
+									aria-expanded="false"
+									aria-controls="collapseElement1"
+								>
+									Link Toggle first
+								</a>
+								<a
+									class="btn btn-primary"
+									role="button"
+									data-bs-toggle="collapse"
+									href="#collapseElement2"
+									aria-expanded="false"
+									aria-controls="collapseElement2"
+								>
+									Link Toggle second
+								</a>
+								<a
+									class="btn btn-primary"
+									role="button"
+									data-bs-toggle="collapse"
+									href=".multiplecollapse"
+									aria-expanded="false"
+									aria-controls="collapseElement1 collapseElement2"
+								>
+									Link Toggle both
+								</a>
+							</p>
+							<!-- Collapse Element -->
+							<div class="row">
+								<div
+									class="col-6 collapse multiplecollapse border border-danger"
+									id="collapseElement1"
+								>
+									<div class="alert alert-warning">
+										Lorem ipsum dolor, sit amet consectetur
+										adipisicing elit. Rem similique maiores
+										mollitia labore libero quam impedit
+										suscipit placeat minus et fugiat
+										deserunt, odit facere! Expedita facere
+										doloribus fugiat magni, reiciendis nam
+										temporibus omnis sunt quibusdam. Porro
+										alias labore earum quae?
+									</div>
+								</div>
+								<div
+									class="col-6 collapse multiplecollapse border border-primary"
+									id="collapseElement2"
+								>
+									<div class="alert alert-warning">
+										Lorem ipsum dolor, sit amet consectetur
+										adipisicing elit. Vero debitis
+										cupiditate ipsum velit excepturi dolores
+										a quasi numquam, dignissimos facilis
+										alias, ducimus voluptate consequuntur
+										corrupti! Soluta hic temporibus qui.
+										Assumenda voluptatem, porro ad deleniti
+										a tempore sint incidunt aut repellendus?
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Test data-bs-parent (Default)
+							</h3>
+							<div class="code-live">
+								<div class="parent">
+									<!-- Control Element -->
+									<div>
+										<a
+											class="btn btn-info"
+											role="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#hrefCollapse1"
+											aria-expanded="false"
+											aria-controls="hrefCollapse1"
+											>Link 1</a
+										>
+									</div>
+									<div class="collapse" id="hrefCollapse1">
+										<div class="alert alert-warning mb-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+									<div>
+										<a
+											class="btn btn-info"
+											role="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#hrefCollapse2"
+											aria-expanded="false"
+											aria-controls="hrefCollapse2"
+											>Link 2</a
+										>
+									</div>
+									<div class="collapse" id="hrefCollapse2">
+										<div class="alert alert-warning mb-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example mb-5">
+							<h3 class="component-variation text-danger">
+								Test data-bs-parent
+							</h3>
+							<div class="code-live">
+								<div class="parent" id="elementParent2">
+									<!-- Control Element -->
+									<div>
+										<a
+											class="btn btn-info"
+											role="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#hrefCollapse3"
+											aria-expanded="false"
+											aria-controls="hrefCollapse3"
+											>Link 1</a
+										>
+									</div>
+									<div
+										class="collapse"
+										id="hrefCollapse3"
+										data-bs-parent="#elementParent2"
+									>
+										<div class="alert alert-warning mb-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+									<div>
+										<a
+											class="btn btn-info"
+											role="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#hrefCollapse4"
+											aria-expanded="false"
+											aria-controls="hrefCollapse4"
+											>Link 2</a
+										>
+									</div>
+									<div
+										class="collapse"
+										id="hrefCollapse4"
+										data-bs-parent="#elementParent2"
+									>
+										<div class="alert alert-warning mb-0">
+											Lorem ipsum dolor sit amet
+											consectetur adipisicing elit. Autem,
+											porro! Laboriosam, temporibus autem
+											accusantium nemo natus ratione unde
+											eos optio consequuntur incidunt,
+											quod rem amet veniam eligendi omnis
+											impedit debitis.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Bootstrap Js -->
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
