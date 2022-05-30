@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar-brand {
+	> img {
+		width: 30px;
+	}
+}
+.specific-bg {
+	background-color: #e3f2fd;
+}
